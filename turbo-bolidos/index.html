@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>TURBO BÓLIDOS GP</title>
+  <meta name="description" content="Monte seu bólido e acelere em pistas malucas, com itens e vários modos. Jogo de corrida arcade 100% offline para Android.">
+  <meta name="theme-color" content="#05081c">
+  <meta property="og:title" content="TURBO BÓLIDOS GP">
+  <meta property="og:description" content="Monte seu bólido e acelere em pistas malucas, com itens e vários modos offline.">
+  <meta property="og:image" content="img/destaque.webp">
+  <link rel="icon" href="icone.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,800;1,700;1,800&family=Lilita+One&family=Outfit:wght@400;500;700;800&display=swap">
+  <link rel="stylesheet" href="../estilo.css">
+  <link rel="stylesheet" href="pagina.css">
+</head>
+<body class="tema-turbo pagina-turbo">
+
+<header class="topo">
+  <a class="marca" href="../"><span class="ponto" aria-hidden="true"></span>Jogos e Apps</a>
+  <nav aria-label="Aplicativos">
+    <a href="./" aria-current="page">TURBO BÓLIDOS GP</a>
+    <a href="../uzu-strike/">UZU STRIKE</a>
+    <a href="../kibo/">KIBO PLAYER</a>
+  </nav>
+</header>
+
+<main>
+  <!-- ===== Herói ===== -->
+  <section class="tb-heroi" id="inicio" aria-label="Turbo Bólidos GP">
+    <div class="tb-heroi-fundo"><img src="../img/slides/kart-pista.webp" alt=""></div>
+    <div class="tb-raios" aria-hidden="true"></div>
+    <div class="tb-heroi-palco" aria-hidden="true">
+      <img class="tb-carro-tras" src="img/carros/hotrod-vermelho.webp" alt="">
+      <img class="tb-carro-frente" src="img/carros/fusca-azul.webp" alt="">
+    </div>
+    <div class="tb-heroi-texto">
+      <h1><img class="tb-logo" src="img/logo.webp" alt="Turbo Bólidos GP" width="1400" height="707"></h1>
+      <p>Monte seu bólido e acelere em pistas malucas, com itens, derrapagens, rampas e planador. Sem cadastro e sem internet: é só abrir e correr!</p>
+      <div class="tb-botoes">
+        <a class="tb-botao doce" href="https://play.google.com/store/apps/details?id=br.com.turbobolidos.gp">
+          <svg class="icone-play" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00d7fe" d="M3.6 1.8 13.5 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1z"/><path fill="#00f076" d="M3.6 1.8c.3-.2.7-.2 1.1 0L17 8.5 13.5 12z"/><path fill="#ff3a44" d="M17 15.5 4.7 22.6c-.4.2-.8.2-1.1 0L13.5 12z"/><path fill="#ffce00" d="M17 8.5l3.3 1.9c1 .6 1 2.6 0 3.2L17 15.5 13.5 12z"/></svg>
+          <span><small>Em breve no</small>Google Play</span>
+        </a>
+        <a class="tb-botao placa" href="#modos"><span>Ver o jogo</span></a>
+      </div>
+    </div>
+    <a class="tb-descer" href="#modos" aria-label="Descer para os modos de jogo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>
+  </section>
+
+  <!-- ===== Navegação das seções ===== -->
+  <nav class="tb-subnav" aria-label="Seções da página">
+    <div class="tb-subnav-dentro">
+      <a class="tb-subnav-logo" href="#inicio" aria-label="Voltar ao topo"><img src="img/logo.webp" alt=""></a>
+      <div class="tb-abas">
+        <a href="#modos">Modos</a>
+        <a href="#pistas">Pistas</a>
+        <a href="#garagem">Garagem</a>
+        <a href="#itens">Itens</a>
+        <a href="#tecnicas">Técnicas</a>
+      </div>
+      <a class="tb-botao doce mini" href="https://play.google.com/store/apps/details?id=br.com.turbobolidos.gp"><span>Google Play</span></a>
+    </div>
+  </nav>
+
+  <!-- ===== Faixa de capturas ===== -->
+  <section class="tb-faixa" aria-label="Capturas do jogo">
+    <div class="tb-faixa-trilho">
+      <div class="tb-faixa-grupo">
+        <img src="img/galeria/confeitariaGigante.webp" alt="Confeitaria Gigante" loading="lazy">
+        <img src="img/modos/rapida.webp" alt="Cidade Neon" loading="lazy">
+        <img src="img/galeria/mansaoAssombrada.webp" alt="Mansão Assombrada" loading="lazy">
+        <img src="img/galeria/cidadeDosCanais.webp" alt="Cidade dos Canais" loading="lazy">
+        <img src="img/modos/tempo.webp" alt="Geleira Aurora" loading="lazy">
+        <img src="img/galeria/picoTormenta.webp" alt="Pico Tormenta" loading="lazy">
+        <img src="img/galeria/arquipelagoFlutuante.webp" alt="Arquipélago Flutuante" loading="lazy">
+        <img src="img/modos/eliminacao.webp" alt="Deserto Miragem" loading="lazy">
+        <img src="img/galeria/temploSolar.webp" alt="Templo Solar" loading="lazy">
+        <img src="img/galeria/navioFantasma.webp" alt="Navio Fantasma" loading="lazy">
+        <img src="img/modos/moedas.webp" alt="Vila Girassol" loading="lazy">
+        <img src="img/galeria/fundicaoRubra.webp" alt="Fundição Rubra" loading="lazy">
+        <img src="img/modos/gp.webp" alt="Copa Estrela" loading="lazy">
+      </div>
+      <div class="tb-faixa-grupo" aria-hidden="true">
+        <img src="img/galeria/confeitariaGigante.webp" alt="" loading="lazy">
+        <img src="img/modos/rapida.webp" alt="" loading="lazy">
+        <img src="img/galeria/mansaoAssombrada.webp" alt="" loading="lazy">
+        <img src="img/galeria/cidadeDosCanais.webp" alt="" loading="lazy">
+        <img src="img/modos/tempo.webp" alt="" loading="lazy">
+        <img src="img/galeria/picoTormenta.webp" alt="" loading="lazy">
+        <img src="img/galeria/arquipelagoFlutuante.webp" alt="" loading="lazy">
+        <img src="img/modos/eliminacao.webp" alt="" loading="lazy">
+        <img src="img/galeria/temploSolar.webp" alt="" loading="lazy">
+        <img src="img/galeria/navioFantasma.webp" alt="" loading="lazy">
+        <img src="img/modos/moedas.webp" alt="" loading="lazy">
+        <img src="img/galeria/fundicaoRubra.webp" alt="" loading="lazy">
+        <img src="img/modos/gp.webp" alt="" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Modos ===== -->
+  <section class="tb-secao tb-modos" id="modos">
+    <div class="envolve">
+      <div class="tb-titulo surge">
+        <span class="tb-etiqueta">Modos de jogo</span>
+        <h2>Escolha como acelerar</h2>
+        <p>Copas valendo troféu, corridas rápidas, recordes contra o relógio e desafios que mudam o jeito de correr.</p>
+      </div>
+      <div class="tb-modos-caixa surge">
+        <div class="tb-modos-lista" role="tablist" aria-label="Modos de jogo">
+          <button role="tab" aria-selected="true" aria-controls="modo-painel" data-modo="0"><img src="img/icones/modo-gp.svg" alt=""><span>Grande Prêmio</span></button>
+          <button role="tab" aria-selected="false" aria-controls="modo-painel" data-modo="1"><img src="img/icones/modo-rapida.svg" alt=""><span>Corrida Rápida</span></button>
+          <button role="tab" aria-selected="false" aria-controls="modo-painel" data-modo="2"><img src="img/icones/modo-tempo.svg" alt=""><span>Contra-relógio</span></button>
+          <button role="tab" aria-selected="false" aria-controls="modo-painel" data-modo="3"><img src="img/icones/modo-eliminacao.svg" alt=""><span>Eliminação</span></button>
+          <button role="tab" aria-selected="false" aria-controls="modo-painel" data-modo="4"><img src="img/icones/modo-moedas.svg" alt=""><span>Caça-moedas</span></button>
+        </div>
+        <div class="tb-modo-painel" id="modo-painel" role="tabpanel" aria-live="polite">
+          <div class="tb-modo-imagem"><img src="img/modos/gp.webp" alt=""></div>
+          <div class="tb-modo-texto">
+            <h3>Grande Prêmio</h3>
+            <p>Dispute as copas pista após pista. Os pontos de cada corrida se somam e o pódio final vale troféu.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Pistas ===== -->
+  <section class="tb-secao tb-pistas" id="pistas">
+    <div class="envolve">
+      <div class="tb-titulo surge">
+        <span class="tb-etiqueta ciano">Pistas</span>
+        <h2>Um mundo de circuitos</h2>
+        <p>Praias, desertos, geleiras, cidades neon, cozinhas gigantes e mansões assombradas. Algumas pistas têm bifurcações de verdade: escolha seu caminho!</p>
+      </div>
+      <div class="tb-copas surge" role="tablist" aria-label="Copas"></div>
+      <div class="tb-copa-cabeca surge">
+        <div><h3 class="tb-copa-nome"></h3><p class="tb-copa-sub"></p></div>
+        <div class="tb-setas">
+          <button class="tb-seta" data-dir="-1" aria-label="Copa anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <button class="tb-seta" data-dir="1" aria-label="Próxima copa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+        </div>
+      </div>
+      <div class="tb-pistas-grade" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ===== Garagem ===== -->
+  <section class="tb-secao tb-garagem" id="garagem">
+    <div class="envolve">
+      <div class="tb-titulo surge">
+        <span class="tb-etiqueta">Garagem</span>
+        <h2>Do carro de rua à máquina de fantasia</h2>
+        <p>Carrinhos retrô, peruas, tuc-tucs, calhambeques e máquinas que só existem aqui. Novos modelos são liberados conforme você avança.</p>
+      </div>
+      <div class="tb-vitrine surge">
+        <button class="tb-seta tb-vitrine-ant" data-dir="-1" aria-label="Carro anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <div class="tb-vitrine-palco">
+          <div class="tb-pedestal" aria-hidden="true"></div>
+          <img class="tb-vitrine-carro" src="img/carros/fusca-azul.webp" alt="">
+        </div>
+        <button class="tb-seta tb-vitrine-prox" data-dir="1" aria-label="Próximo carro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+        <div class="tb-vitrine-info" aria-live="polite">
+          <h3 class="tb-vitrine-nome">Besourinho</h3>
+          <p class="tb-vitrine-frase">Capô redondo, motor atrás, teimoso</p>
+        </div>
+        <div class="tb-vitrine-miniaturas" role="tablist" aria-label="Escolher carro"></div>
+      </div>
+      <div class="tb-pecas surge">
+        <div class="tb-peca"><img src="img/icones/peca-chassi.svg" alt=""><div><strong>Chassi</strong><span>O corpo do bólido</span></div></div>
+        <span class="tb-mais" aria-hidden="true">+</span>
+        <div class="tb-peca"><img src="img/icones/peca-pneu.svg" alt=""><div><strong>Pneus</strong><span>Tração e controle</span></div></div>
+        <span class="tb-mais" aria-hidden="true">+</span>
+        <div class="tb-peca"><img src="img/icones/peca-planador.svg" alt=""><div><strong>Planador</strong><span>Para voar nos saltos</span></div></div>
+        <p>Cada peça muda velocidade, aceleração, peso, tração e controle. Escolha também a pintura e os adesivos e descubra a montagem que combina com você.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Itens ===== -->
+  <section class="tb-secao tb-itens" id="itens">
+    <div class="envolve">
+      <div class="tb-titulo surge">
+        <span class="tb-etiqueta">Itens</span>
+        <h2>Itens para virar o jogo</h2>
+        <p>Passe pelas caixas da pista e torça pela sorte: cada item pode decidir a corrida na última volta.</p>
+      </div>
+      <div class="tb-itens-grade"></div>
+    </div>
+  </section>
+
+  <!-- ===== Técnicas ===== -->
+  <section class="tb-secao tb-tecnicas" id="tecnicas">
+    <div class="envolve">
+      <div class="tb-titulo surge">
+        <span class="tb-etiqueta ciano">Técnicas</span>
+        <h2>Derrape, salte e voe</h2>
+      </div>
+      <div class="tb-tecnicas-grade">
+        <div class="tb-tecnica surge">
+          <h3>Mini-turbo na derrapagem</h3>
+          <p>Segure o botão de derrapar na curva: quanto mais tempo, maior o turbo ao soltar.</p>
+          <div class="tb-medidor" aria-hidden="true"><i></i></div>
+          <ul class="tb-niveis">
+            <li><span class="nv azul"></span>Azul</li>
+            <li><span class="nv laranja"></span>Laranja</li>
+            <li><span class="nv roxo"></span>Roxo</li>
+          </ul>
+        </div>
+        <div class="tb-tecnica surge">
+          <h3>Rampas e planador</h3>
+          <p>Salte das rampas e abra o planador para voar sobre os abismos e cortar caminho pelo alto.</p>
+          <img class="tb-tecnica-icone" src="img/icones/peca-planador.svg" alt="">
+        </div>
+        <div class="tb-tecnica surge">
+          <h3>Feito para o celular</h3>
+          <p>Botões ou analógico, aceleração automática opcional e gráficos ajustáveis, do aparelho básico ao topo de linha.</p>
+          <img class="tb-tecnica-icone" src="img/icones/bandeira.svg" alt="">
+        </div>
+        <div class="tb-tecnica surge">
+          <h3>Sempre um novo desafio</h3>
+          <p>Cilindradas mais rápidas, modo espelhado, missões, conquistas, prêmio diário, eventos da semana e sala de troféus.</p>
+          <img class="tb-tecnica-icone" src="img/icones/trofeu.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Chamada final ===== -->
+  <section class="tb-final">
+    <div class="tb-final-fundo"><img src="../img/slides/kart-pista.webp" alt="" loading="lazy"></div>
+    <div class="envolve tb-final-dentro surge">
+      <img class="tb-logo" src="img/logo.webp" alt="Turbo Bólidos GP" loading="lazy">
+      <p>Sem cadastro, sem login e sem precisar de internet para jogar.</p>
+      <div class="tb-botoes">
+        <a class="tb-botao doce" href="https://play.google.com/store/apps/details?id=br.com.turbobolidos.gp">
+          <svg class="icone-play" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00d7fe" d="M3.6 1.8 13.5 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1z"/><path fill="#00f076" d="M3.6 1.8c.3-.2.7-.2 1.1 0L17 8.5 13.5 12z"/><path fill="#ff3a44" d="M17 15.5 4.7 22.6c-.4.2-.8.2-1.1 0L13.5 12z"/><path fill="#ffce00" d="M17 8.5l3.3 1.9c1 .6 1 2.6 0 3.2L17 15.5 13.5 12z"/></svg>
+          <span><small>Em breve no</small>Google Play</span>
+        </a>
+        <a class="tb-botao placa" href="privacidade.html"><span>Política de privacidade</span></a>
+      </div>
+      <ul class="tb-privacidade">
+        <li>Apelido, progresso e recordes ficam só no seu aparelho.</li>
+        <li>Anúncios opcionais, em troca de moedas no jogo.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="secao alt">
+    <div class="envolve">
+      <div class="secao-titulo"><span class="tipo">Conheça também</span></div>
+      <div class="outros">
+        <a class="outro" href="../uzu-strike/"><img src="../uzu-strike/icone.png" alt=""><div><strong>UZU STRIKE</strong><span>Batalhas de piões com Kamis</span></div></a>
+        <a class="outro" href="../kibo/"><img src="../kibo/icone.png" alt=""><div><strong>KIBO PLAYER</strong><span>Player com um robozinho de estimação</span></div></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="envolve">
+    <span>© 2026 Victor da Silva Rodrigues</span>
+    <nav><a href="../">Todos os apps</a><a href="privacidade.html">Política de privacidade</a></nav>
+  </div>
+</footer>
+
+<script src="dados.js"></script>
+<script src="../site.js"></script>
+<script src="pagina.js"></script>
+</body>
+</html>
