@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>LETRANÇA</title>
+  <meta name="description" content="Letrança: jogo de palavras cruzadas em que você liga as letras com o dedo e costura palavras, letra a letra. Em breve para Android.">
+  <meta name="theme-color" content="#f3ead8">
+  <meta property="og:title" content="LETRANÇA">
+  <meta property="og:description" content="Costure palavras, letra a letra. Em breve para Android.">
+  <meta property="og:image" content="img/tela-fase-2.webp">
+  <link rel="icon" href="icone.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,600..900,100&family=Nunito:wght@600;700;800&family=Outfit:wght@400;500;700;800&display=swap">
+  <link rel="stylesheet" href="../estilo.css">
+  <link rel="stylesheet" href="pagina.css">
+</head>
+<body class="pagina-letranca">
+
+<header class="topo">
+  <a class="marca" href="../"><span class="ponto" aria-hidden="true"></span>Jogos e Apps</a>
+  <nav aria-label="Aplicativos">
+    <a href="../turbo-bolidos/">TURBO BÓLIDOS GP</a>
+    <a href="../uzu-strike/">UZU STRIKE</a>
+    <a href="../kibo/">KIBO PLAYER</a>
+    <a href="./" aria-current="page">LETRANÇA</a>
+  </nav>
+</header>
+
+<main>
+  <!-- ================= Herói: a mesa de costura ================= -->
+  <section class="lt-heroi" id="inicio" aria-label="Letrança">
+    <div class="lt-heroi-dentro">
+      <div class="lt-heroi-texto">
+        <span class="lt-selo">Em breve · Android</span>
+        <h1 class="lt-logo" aria-label="Letrança">
+          <svg class="lt-logo-fio" viewBox="0 0 800 100" preserveAspectRatio="none" aria-hidden="true"><path d="M-10 62 C 25 20, 75 20, 100 50 S 175 80, 200 50 S 275 20, 300 50 S 375 80, 400 50 S 475 20, 500 50 S 575 80, 600 50 S 675 20, 700 50 S 775 80, 810 40" /></svg>
+          <span style="--c:#c4553b;--r:-5deg">L</span><span style="--c:#d9a441;--r:3deg">E</span><span style="--c:#3f5a8a;--r:-2deg">T</span><span style="--c:#7d9a7a;--r:4deg">R</span><span style="--c:#a35d6a;--r:-3deg">A</span><span style="--c:#c4553b;--r:2deg">N</span><span style="--c:#3f5a8a;--r:-4deg">Ç</span><span style="--c:#d9a441;--r:3deg">A</span>
+        </h1>
+        <p class="lt-sub">costure palavras, letra a letra</p>
+        <p class="lt-desc">Um jogo de palavras cruzadas aconchegante: ligue as letras do bastidor com o dedo, forme palavras e encha a cruzadinha, fase a fase, numa colcha de retalhos.</p>
+        <div class="lt-botoes">
+          <a class="lt-botao" href="https://play.google.com/store/apps/details?id=br.com.letranca">
+            <svg class="icone-play" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00d7fe" d="M3.6 1.8 13.5 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1z"/><path fill="#00f076" d="M3.6 1.8c.3-.2.7-.2 1.1 0L17 8.5 13.5 12z"/><path fill="#ff3a44" d="M17 15.5 4.7 22.6c-.4.2-.8.2-1.1 0L13.5 12z"/><path fill="#ffce00" d="M17 8.5l3.3 1.9c1 .6 1 2.6 0 3.2L17 15.5 13.5 12z"/></svg>
+            <span><small>Em breve no</small>Google Play</span>
+          </a>
+          <a class="lt-botao discreto" href="#como-jogar"><span>Como jogar</span></a>
+        </div>
+      </div>
+      <div class="lt-heroi-arte" aria-hidden="true">
+        <div class="lt-celular lt-c1"><img src="img/tela-fase-2.webp" alt=""></div>
+        <div class="lt-celular lt-c2"><img src="img/tela-mapa.webp" alt=""></div>
+        <span class="lt-carretel"></span>
+        <span class="lt-botaozinho b1"></span><span class="lt-botaozinho b2"></span><span class="lt-botaozinho b3"></span>
+      </div>
+    </div>
+    <svg class="lt-costura-borda" viewBox="0 0 1200 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 20 H1200" /></svg>
+  </section>
+
+  <!-- ================= Como jogar ================= -->
+  <section class="lt-secao lt-como" id="como-jogar">
+    <div class="envolve">
+      <div class="lt-cabeca surge">
+        <span class="lt-etiqueta">Como jogar</span>
+        <h2>Fácil de aprender, gostoso de <em>costurar</em></h2>
+      </div>
+      <ol class="lt-passos">
+        <li class="surge">
+          <div class="lt-bastidor-demo" aria-hidden="true">
+            <svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="86" class="aro"/><circle cx="100" cy="100" r="74" class="pano"/>
+              <path class="lt-linha-demo" d="M100 48 L148 118 L52 118"/>
+              <g class="letra"><circle cx="100" cy="48" r="20"/><text x="100" y="56">O</text></g>
+              <g class="letra"><circle cx="148" cy="118" r="20"/><text x="148" y="126">B</text></g>
+              <g class="letra"><circle cx="52" cy="118" r="20"/><text x="52" y="126">A</text></g>
+            </svg>
+          </div>
+          <h3>1 · Ligue as letras</h3>
+          <p>Passe o dedo pelas letras do bastidor sem soltar, como quem dá pontos com a linha.</p>
+        </li>
+        <li class="surge">
+          <div class="lt-cruzadinha" aria-hidden="true">
+            <span class="c" style="--x:1;--y:1">O</span><span class="c" style="--x:2;--y:1">B</span><span class="c" style="--x:3;--y:1">A</span>
+            <span class="v" style="--x:2;--y:2"></span><span class="v" style="--x:2;--y:3"></span>
+          </div>
+          <h3>2 · Encha a cruzadinha</h3>
+          <p>Cada palavra certa se costura no seu lugar. Complete todas para fechar a fase.</p>
+        </li>
+        <li class="surge">
+          <div class="lt-estrelas" aria-hidden="true"><i>★</i><i>★</i><i>★</i></div>
+          <h3>3 · Ganhe as estrelas</h3>
+          <p>Cada fase tem desafios: completar, terminar sem ajuda, errar pouco, achar palavras extras…</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= A colcha (lugares) ================= -->
+  <section class="lt-secao lt-colcha" id="colcha">
+    <div class="envolve">
+      <div class="lt-cabeca surge">
+        <span class="lt-etiqueta">A colcha</span>
+        <h2>Uma colcha de <em>retalhos</em> para percorrer</h2>
+        <p class="lt-colcha-p">As fases formam uma colcha: cada retalho tem estampa e cores próprias. Passe o mouse ou toque para ver.</p>
+      </div>
+      <div class="lt-retalhos surge" role="list"></div>
+    </div>
+  </section>
+
+  <!-- ================= Ajudas ================= -->
+  <section class="lt-secao lt-ajudas" id="ajudas">
+    <div class="envolve lt-dois">
+      <div class="surge">
+        <div class="lt-cabeca">
+          <span class="lt-etiqueta">Quando a linha embola</span>
+          <h2>Ajudas na <em>caixa de costura</em></h2>
+          <p>Ganhe botões dourados ao completar as fases e troque por ajudas quando uma palavra não sair: revelar uma letra, uma palavra inteira ou mais linha para tentar de novo.</p>
+        </div>
+        <ul class="lt-lista">
+          <li><b>✦</b><div><strong>Sem pressa</strong><span>Jogue no seu ritmo. Se sair no meio, a fase continua de onde parou.</span></div></li>
+          <li><b>✦</b><div><strong>Palavras extras</strong><span>Achou uma palavra que não está na cruzadinha? Ela vale como bônus.</span></div></li>
+          <li><b>✦</b><div><strong>Dicionário no aparelho</strong><span>As palavras são conferidas no próprio celular, sem internet.</span></div></li>
+        </ul>
+      </div>
+      <div class="lt-celulares surge" aria-hidden="true">
+        <div class="lt-celular"><img src="img/tela-fase-3.webp" alt="" loading="lazy"></div>
+        <div class="lt-celular"><img src="img/tela-fase-4.webp" alt="" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Telas ================= -->
+  <section class="lt-secao lt-telas">
+    <div class="envolve">
+      <div class="lt-cabeca surge"><span class="lt-etiqueta">Telas</span><h2>Dê uma <em>espiada</em></h2></div>
+      <div class="galeria retrato lt-galeria surge">
+        <img src="img/tela-abertura.webp" alt="Abertura do Letrança" width="618" height="1338" loading="lazy">
+        <img src="img/tela-mapa.webp" alt="Mapa de fases em forma de colcha" width="618" height="1338" loading="lazy">
+        <img src="img/tela-fase-1.webp" alt="Uma fase no começo" width="618" height="1338" loading="lazy">
+        <img src="img/tela-fase-2.webp" alt="Cruzadinha com palavras costuradas" width="618" height="1338" loading="lazy">
+        <img src="img/tela-fase-3.webp" alt="Fase no retalho de listras" width="618" height="1338" loading="lazy">
+        <img src="img/tela-fase-4.webp" alt="Fase no retalho de tricô" width="618" height="1338" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Final ================= -->
+  <section class="lt-final">
+    <div class="envolve lt-final-dentro surge">
+      <img class="lt-final-icone" src="icone.png" alt="" loading="lazy">
+      <h2>Em breve no seu celular</h2>
+      <p>O Letrança está nos últimos pontos. Logo, logo chega à Play Store.</p>
+      <div class="lt-botoes centro">
+        <a class="lt-botao" href="https://play.google.com/store/apps/details?id=br.com.letranca">
+          <svg class="icone-play" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00d7fe" d="M3.6 1.8 13.5 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1z"/><path fill="#00f076" d="M3.6 1.8c.3-.2.7-.2 1.1 0L17 8.5 13.5 12z"/><path fill="#ff3a44" d="M17 15.5 4.7 22.6c-.4.2-.8.2-1.1 0L13.5 12z"/><path fill="#ffce00" d="M17 8.5l3.3 1.9c1 .6 1 2.6 0 3.2L17 15.5 13.5 12z"/></svg>
+          <span><small>Em breve no</small>Google Play</span>
+        </a>
+        <a class="lt-botao discreto" href="privacidade.html"><span>Política de privacidade</span></a>
+      </div>
+      <ul class="lt-privacidade">
+        <li>Sem cadastro e sem login.</li>
+        <li>Seu progresso fica só no seu aparelho.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="secao alt">
+    <div class="envolve">
+      <div class="secao-titulo"><span class="tipo">Conheça também</span></div>
+      <div class="outros">
+        <a class="outro" href="../turbo-bolidos/"><img src="../turbo-bolidos/icone.png" alt=""><div><strong>TURBO BÓLIDOS GP</strong><span>Corrida arcade 100% offline</span></div></a>
+        <a class="outro" href="../uzu-strike/"><img src="../uzu-strike/icone.png" alt=""><div><strong>UZU STRIKE</strong><span>Batalhas de piões com Kamis</span></div></a>
+        <a class="outro" href="../kibo/"><img src="../kibo/icone.png" alt=""><div><strong>KIBO PLAYER</strong><span>Player com um robozinho de estimação</span></div></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="envolve">
+    <span>© 2026 Victor da Silva Rodrigues</span>
+    <nav><a href="../">Todos os apps</a><a href="privacidade.html">Política de privacidade</a></nav>
+  </div>
+</footer>
+
+<script src="dados.js"></script>
+<script src="../site.js"></script>
+<script src="pagina.js"></script>
+</body>
+</html>
