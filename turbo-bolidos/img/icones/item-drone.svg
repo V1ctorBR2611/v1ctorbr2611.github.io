@@ -1,0 +1,83 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <defs>
+    <radialGradient id="drBody" cx="0.36" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#ff9a8a"/><stop offset="0.25" stop-color="#f23a36"/>
+      <stop offset="0.7" stop-color="#b8121e"/><stop offset="1" stop-color="#6e0610"/>
+    </radialGradient>
+    <linearGradient id="drCanopy" x1="0.2" y1="0" x2="0.7" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="0.6" stop-color="#e2e7ef"/><stop offset="1" stop-color="#a9b2c2"/>
+    </linearGradient>
+    <linearGradient id="drDuct" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff0a8"/><stop offset="0.35" stop-color="#ffc53a"/>
+      <stop offset="0.75" stop-color="#e89a14"/><stop offset="1" stop-color="#94480a"/>
+    </linearGradient>
+    <linearGradient id="drArm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5a6274"/><stop offset="0.5" stop-color="#232733"/><stop offset="1" stop-color="#0c0e14"/>
+    </linearGradient>
+    <radialGradient id="drEye" cx="0.4" cy="0.38" r="0.6">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="0.35" stop-color="#9ff6ff"/>
+      <stop offset="0.8" stop-color="#1fc8ff"/><stop offset="1" stop-color="#0a6e9c"/>
+    </radialGradient>
+    <radialGradient id="drGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#9ff6ff" stop-opacity="0.9"/><stop offset="1" stop-color="#1fc8ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g transform="translate(32 34) scale(0.88) translate(-32 -34)">
+  <!-- back arms and rotors -->
+  <path d="M26 30 14 21M38 30 50 21" stroke="url(#drArm)" stroke-width="4.2"/>
+  <g transform="translate(14 20) scale(0.82)">
+  <ellipse cx="0" cy="1.6" rx="12" ry="4.6" fill="#7a3f06"/>
+  <ellipse cx="0" cy="0" rx="12" ry="4.6" fill="url(#drDuct)"/>
+  <ellipse cx="0" cy="0" rx="8.6" ry="2.9" fill="#141822"/>
+  <path d="M-8 -.6 8 .6M-2.4 -2.6 2.4 2.6" stroke="#3a4152" stroke-width="1.3"/>
+  <ellipse cx="0" cy="0" rx="8.6" ry="2.9" fill="#e8f0fa" fill-opacity="0.32"/>
+  <circle cx="0" cy="0" r="1.3" fill="#2a2f3c"/>
+  <path d="M-10.6 -1.6a12 4.6 0 0 1 7-2.8" stroke="#fff6c8" stroke-width="1.2" stroke-opacity="0.85"/></g>
+  <g transform="translate(50 20) scale(0.82)">
+  <ellipse cx="0" cy="1.6" rx="12" ry="4.6" fill="#7a3f06"/>
+  <ellipse cx="0" cy="0" rx="12" ry="4.6" fill="url(#drDuct)"/>
+  <ellipse cx="0" cy="0" rx="8.6" ry="2.9" fill="#141822"/>
+  <path d="M-8 -.6 8 .6M-2.4 -2.6 2.4 2.6" stroke="#3a4152" stroke-width="1.3"/>
+  <ellipse cx="0" cy="0" rx="8.6" ry="2.9" fill="#e8f0fa" fill-opacity="0.32"/>
+  <circle cx="0" cy="0" r="1.3" fill="#2a2f3c"/>
+  <path d="M-10.6 -1.6a12 4.6 0 0 1 7-2.8" stroke="#fff6c8" stroke-width="1.2" stroke-opacity="0.85"/></g>
+  <!-- the beacon on its mast -->
+  <path d="M38.6 25 41.4 10.6" stroke="#1c1f27" stroke-width="1.8"/>
+  <circle cx="41.6" cy="9.4" r="5" fill="#ff3a3a" fill-opacity="0.35"/>
+  <circle cx="41.6" cy="9.4" r="2.4" fill="#ff4a3a"/>
+  <circle cx="41" cy="8.8" r="0.9" fill="#ffffff" fill-opacity="0.9"/>
+  <!-- the EMP charge under the belly, with its glow and crackle -->
+  <circle cx="32" cy="50" r="11" fill="url(#drGlow)"/>
+  <path d="M24.4 51.4l-3.4 .4 1.8 2-3.6 1.4M39.6 51.4l3.4 .4-1.8 2 3.6 1.4" stroke="#bff8ff" stroke-width="1.5"/>
+  <rect x="29.6" y="40" width="4.8" height="6" fill="#1c1f27"/>
+  <circle cx="32" cy="50" r="5" fill="url(#drEye)"/>
+  <ellipse cx="32" cy="50" rx="7.4" ry="2.6" stroke="url(#drDuct)" stroke-width="2.2"/>
+  <!-- the pod: red, the white canopy over its top -->
+  <ellipse cx="32" cy="34" rx="16" ry="11.5" fill="url(#drBody)"/>
+  <path d="M16.2 32.4a16 11.5 0 0 1 31.6 0c-4 -2.4-9.6-3.6-15.8-3.6s-11.8 1.2-15.8 3.6Z" fill="url(#drCanopy)"/>
+  <path d="M19.6 27.6a16 11.5 0 0 1 9.6-5" stroke="#ffffff" stroke-width="1.8" stroke-opacity="0.95"/>
+  <path d="M45 40.6a16 11.5 0 0 1-8.6 4.4" stroke="#ff8a7a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <!-- front arms and rotors -->
+  <path d="M20 37 9 43M44 37 55 43" stroke="url(#drArm)" stroke-width="5"/>
+  <g transform="translate(9 43)">
+  <ellipse cx="0" cy="1.6" rx="12" ry="4.6" fill="#7a3f06"/>
+  <ellipse cx="0" cy="0" rx="12" ry="4.6" fill="url(#drDuct)"/>
+  <ellipse cx="0" cy="0" rx="8.6" ry="2.9" fill="#141822"/>
+  <path d="M-8 -.6 8 .6M-2.4 -2.6 2.4 2.6" stroke="#3a4152" stroke-width="1.3"/>
+  <ellipse cx="0" cy="0" rx="8.6" ry="2.9" fill="#e8f0fa" fill-opacity="0.32"/>
+  <circle cx="0" cy="0" r="1.3" fill="#2a2f3c"/>
+  <path d="M-10.6 -1.6a12 4.6 0 0 1 7-2.8" stroke="#fff6c8" stroke-width="1.2" stroke-opacity="0.85"/></g>
+  <g transform="translate(55 43)">
+  <ellipse cx="0" cy="1.6" rx="12" ry="4.6" fill="#7a3f06"/>
+  <ellipse cx="0" cy="0" rx="12" ry="4.6" fill="url(#drDuct)"/>
+  <ellipse cx="0" cy="0" rx="8.6" ry="2.9" fill="#141822"/>
+  <path d="M-8 -.6 8 .6M-2.4 -2.6 2.4 2.6" stroke="#3a4152" stroke-width="1.3"/>
+  <ellipse cx="0" cy="0" rx="8.6" ry="2.9" fill="#e8f0fa" fill-opacity="0.32"/>
+  <circle cx="0" cy="0" r="1.3" fill="#2a2f3c"/>
+  <path d="M-10.6 -1.6a12 4.6 0 0 1 7-2.8" stroke="#fff6c8" stroke-width="1.2" stroke-opacity="0.85"/></g>
+  <!-- the eye: dark glass, the cyan lens, a glint -->
+  <circle cx="32" cy="37" r="6.6" fill="#0a1426"/>
+  <circle cx="32" cy="37" r="4.2" fill="url(#drEye)"/>
+  <circle cx="30.4" cy="35.4" r="1.3" fill="#ffffff"/>
+  <path d="M27 33.4a6.6 6.6 0 0 1 4-2.8" stroke="#8fa4c8" stroke-width="1" stroke-opacity="0.8"/>
+  </g></svg>

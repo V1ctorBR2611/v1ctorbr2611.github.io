@@ -1,0 +1,25 @@
+<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <defs>
+    <linearGradient id="cnRim" x1="0.16" y1="0.03" x2="0.84" y2="0.97">
+      <stop offset="0" stop-color="#fffce6"/>
+      <stop offset="0.2" stop-color="#ffe873"/>
+      <stop offset="0.45" stop-color="#ffc21a"/>
+      <stop offset="0.72" stop-color="#f2870a"/>
+      <stop offset="1" stop-color="#c94605"/>
+    </linearGradient>
+    <linearGradient id="cnField" x1="0.26" y1="0" x2="0.6" y2="1">
+      <stop offset="0" stop-color="#fff69a"/>
+      <stop offset="0.34" stop-color="#ffdc2e"/>
+      <stop offset="0.74" stop-color="#ffbe07"/>
+      <stop offset="1" stop-color="#ef8b05"/>
+    </linearGradient>
+  </defs>
+  <circle cx="24" cy="24" r="23" fill="url(#cnRim)"/>
+  <circle cx="24" cy="24" r="17.9" fill="none" stroke="#d0590a" stroke-width="1.3"/>
+  <circle cx="24" cy="24" r="17.1" fill="url(#cnField)"/>
+  <path d="M4.45 31.11A20.8 20.8 0 0 0 13.6 42" stroke="#ffe873" stroke-width="2" stroke-opacity="0.5"/>
+  <path d="M4.45 16.89A20.8 20.8 0 0 1 16.89 4.45" stroke="#fffdf2" stroke-width="2.8"/>
+  <path d="M29.2 10.6 16.6 26.2 23.6 27.2 18.8 37.4 31.4 21.6 24.4 20.6Z" fill="#b45c05" fill-opacity="0.45" transform="translate(1.8 2)"/>
+  <path d="M29.2 10.6 16.6 26.2 23.6 27.2 18.8 37.4 31.4 21.6 24.4 20.6Z" fill="#b85f05" transform="translate(0.85 0.95)"/>
+  <path d="M29.2 10.6 16.6 26.2 23.6 27.2 18.8 37.4 31.4 21.6 24.4 20.6Z" fill="#fff3a6" transform="translate(-0.75 -0.8)"/>
+  <path d="M29.2 10.6 16.6 26.2 23.6 27.2 18.8 37.4 31.4 21.6 24.4 20.6Z" fill="#ffdc3a"/></svg>

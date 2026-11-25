@@ -1,0 +1,29 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <defs>
+    <radialGradient id="obHalo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0.5" stop-color="#d27bff" stop-opacity="0.75"/><stop offset="1" stop-color="#9640ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="obBody" cx="0.38" cy="0.34" r="0.8">
+      <stop offset="0" stop-color="#ead4ff"/><stop offset="0.3" stop-color="#b56cff"/>
+      <stop offset="0.72" stop-color="#7a2ee6"/><stop offset="1" stop-color="#4a14a8"/>
+    </radialGradient>
+    <radialGradient id="obCore" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#fbe2ff"/>
+      <stop offset="0.8" stop-color="#e08cff" stop-opacity="0.9"/><stop offset="1" stop-color="#b45cff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="33" cy="32" r="30" fill="url(#obHalo)"/>
+  <!-- shards breaking off behind it -->
+  <path d="M6 44l5-3 1 5Z" fill="#e6b8ff"/><path d="M4 33l4-1-1 4Z" fill="#c98cff"/>
+  <path d="M9 54l3-1 0 3Z" fill="#f6e0ff"/>
+  <circle cx="34" cy="32" r="21" fill="url(#obBody)"/>
+  <circle cx="35" cy="34" r="14" fill="url(#obCore)"/>
+  <!-- the cracks: bright seams with a soft glow under each -->
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <path d="M22 18l6 7-3 6 7 3 3 8-4 7M28 25l8-4 5 4 6-2M32 34l9 1 4 6M41 35l5-7M25 31l-8 3" stroke="#f0b0ff" stroke-width="4" stroke-opacity="0.6"/>
+    <path d="M22 18l6 7-3 6 7 3 3 8-4 7M28 25l8-4 5 4 6-2M32 34l9 1 4 6M41 35l5-7M25 31l-8 3" stroke="#ffffff" stroke-width="1.6"/>
+  </g>
+  <!-- speculars and a cool rim on the shadow side -->
+  <ellipse cx="25" cy="20" rx="6" ry="3.2" fill="#ffffff" fill-opacity="0.45" transform="rotate(-32 25 20)"/>
+  <circle cx="22.6" cy="22.4" r="1.8" fill="#ffffff" fill-opacity="0.95"/>
+  <path d="M53 40a21 21 0 0 1-13 12" stroke="#ecd2ff" stroke-width="1.8" stroke-opacity="0.85"/></svg>

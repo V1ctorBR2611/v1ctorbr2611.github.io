@@ -1,0 +1,27 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <defs>
+    <linearGradient id="mcGold" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#fffce6"/><stop offset="0.28" stop-color="#ffe14a"/>
+      <stop offset="0.66" stop-color="#ffb20f"/><stop offset="1" stop-color="#c94605"/>
+    </linearGradient>
+    <linearGradient id="mcGem" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#ffe0f6"/><stop offset="0.4" stop-color="#ff5ad2"/><stop offset="1" stop-color="#8a0f6a"/>
+    </linearGradient>
+    <linearGradient id="mcClock" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e6fdff"/><stop offset="0.5" stop-color="#5ef0ff"/><stop offset="1" stop-color="#0f8fb8"/>
+    </linearGradient>
+  </defs>
+  <path d="M2 30h9M4 38h8M2 46h7" stroke="#070b24" stroke-width="6"/>
+  <path d="M2 30h9M2 46h7" stroke="#ffd23a" stroke-width="2.6"/>
+  <path d="M4 38h8" stroke="#2de0ff" stroke-width="2.6"/>
+  <circle cx="44" cy="22" r="13" fill="url(#mcGem)" stroke="#070b24" stroke-width="2.4"/>
+  <path d="M44 14l5 8-5 8-5-8z" fill="#ffffff" fill-opacity="0.75" stroke="#070b24" stroke-width="1.6"/>
+  <circle cx="30" cy="38" r="19" fill="url(#mcGold)" stroke="#070b24" stroke-width="2.8"/>
+  <circle cx="30" cy="38" r="13.4" fill="none" stroke="#c94605" stroke-width="2" stroke-opacity="0.55"/>
+  <path d="M33.4 26.6L23 40h6.4l-3 11.6L37.6 36H31z" fill="#fff6c8" stroke="#070b24" stroke-width="2"/>
+  <path d="M16.6 31A15 15 0 0 1 24 22.4" stroke="#ffffff" stroke-width="3" stroke-opacity="0.85"/>
+  <circle cx="52" cy="50" r="10" fill="url(#mcClock)" stroke="#070b24" stroke-width="2.4"/>
+  <path d="M52 44v6l4 2.6" stroke="#070b24" stroke-width="2.4"/>
+  <rect x="49.6" y="36.4" width="4.8" height="4" rx="1" fill="#5ef0ff" stroke="#070b24" stroke-width="1.8"/>
+  <circle cx="12" cy="14" r="5" fill="url(#mcGold)" stroke="#070b24" stroke-width="2"/>
+  <circle cx="24" cy="7.6" r="3.6" fill="url(#mcGold)" stroke="#070b24" stroke-width="1.8"/></svg>

@@ -1,0 +1,18 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <defs>
+    <linearGradient id="rcBolt" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#f0fff0"/><stop offset="0.3" stop-color="#8dff9e"/>
+      <stop offset="0.7" stop-color="#22d44a"/><stop offset="1" stop-color="#0c7a26"/>
+    </linearGradient>
+    <radialGradient id="rcGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#7dff92" stop-opacity="0.7"/><stop offset="1" stop-color="#22d44a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="url(#rcGlow)" fill-opacity="0.65"/>
+  <g stroke="#c4ffcc" stroke-width="3.4">
+    <path d="M12 44A22 22 0 0 1 20 10"/><path d="M14.6 6.4 21 9.6 18.4 16"/>
+    <path d="M52 20A22 22 0 0 1 44 54"/><path d="M49.4 57.6 43 54.4 45.6 48"/>
+  </g>
+  <path d="M41 3 17 34 29.5 34.6 21 60 48 24.6 35 24 45.6 3Z" fill="#06401a" transform="translate(2.2 2)"/>
+  <path d="M41 3 17 34 29.5 34.6 21 60 48 24.6 35 24 45.6 3Z" fill="url(#rcBolt)"/>
+  <path d="M43.4 5 20.6 33" stroke="#ffffff" stroke-width="1.8" stroke-opacity="0.85"/></svg>
