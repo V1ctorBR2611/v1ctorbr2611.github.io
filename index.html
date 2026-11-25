@@ -2,25 +2,178 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Convesweb Apps</title>
-  <meta name="description" content="Aplicativos da Convesweb para Android.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Jogos e Apps · Victor da Silva Rodrigues</title>
+  <meta name="description" content="Kibo Player, Turbo Bólidos GP e UZU STRIKE: jogos e apps de Victor da Silva Rodrigues para Android.">
+  <meta name="theme-color" content="#05070c">
+  <meta property="og:title" content="Jogos e Apps · Victor da Silva Rodrigues">
+  <meta property="og:description" content="Kibo Player, Turbo Bólidos GP e UZU STRIKE: apps e jogos para Android.">
+  <meta property="og:image" content="turbo-bolidos/img/destaque.webp">
+  <link rel="icon" href="kibo/icone.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&display=swap">
   <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+
+<header class="topo">
+  <a class="marca" href="./"><span class="ponto" aria-hidden="true"></span>Jogos e Apps</a>
+  <nav aria-label="Aplicativos">
+    <a href="turbo-bolidos/">TURBO BÓLIDOS GP</a>
+    <a href="uzu-strike/">UZU STRIKE</a>
+    <a href="kibo/">KIBO PLAYER</a>
+  </nav>
+</header>
+
 <main>
-  <h1>Convesweb Apps</h1>
-  <p class="sub">Aplicativos para Android.</p>
+  <!-- Apresentação de slides. Cada .camada é uma imagem recortada (ferramentas/*-camadas.mjs);
+       data-prof = quanto a camada se move com o mouse (paralaxe). -->
+  <section class="slides" aria-roledescription="carrossel" aria-label="Jogos e apps em destaque" tabindex="0">
 
-  <a class="app" href="kibo/">
-    <img src="kibo/icone.png" alt="">
-    <div>
-      <strong>Kibo Player</strong>
-      <span>Player de músicas e vídeos com um robozinho de estimação.</span>
+    <article class="slide s-turbo" data-cor="#ffae1f" aria-roledescription="slide" aria-label="Turbo Bólidos GP">
+      <div class="camada fundo" data-prof="10"><img src="img/slides/kart-pista.webp" alt=""></div>
+      <div class="camada velocidade"></div>
+      <div class="palco">
+        <div class="camada poeira" data-prof="40"></div>
+        <div class="camada carro-2" data-prof="24"><img src="img/slides/kart-carro-hotrod-vermelho.webp" alt=""></div>
+        <div class="camada carro-1" data-prof="46"><img src="img/slides/kart-carro-fusca-azul.webp" alt=""></div>
+      </div>
+      <div class="slide-texto">
+        <img class="icone" src="turbo-bolidos/icone.png" alt="" width="64" height="64">
+        <span class="tipo">Jogo de corrida</span>
+        <h2>Turbo Bólidos GP</h2>
+        <p>Monte seu bólido e acelere em pistas malucas, com itens, derrapagens e planador. 100% offline.</p>
+        <div class="botoes">
+          <a class="botao" href="turbo-bolidos/">Conhecer o jogo</a>
+          <a class="botao secundario" href="https://play.google.com/store/apps/details?id=br.com.turbobolidos.gp"><svg class="icone-play" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00d7fe" d="M3.6 1.8 13.5 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1z"/><path fill="#00f076" d="M3.6 1.8c.3-.2.7-.2 1.1 0L17 8.5 13.5 12z"/><path fill="#ff3a44" d="M17 15.5 4.7 22.6c-.4.2-.8.2-1.1 0L13.5 12z"/><path fill="#ffce00" d="M17 8.5l3.3 1.9c1 .6 1 2.6 0 3.2L17 15.5 13.5 12z"/></svg><span><small>Em breve no</small>Google Play</span></a>
+        </div>
+      </div>
+    </article>
+
+    <article class="slide s-uzu" data-cor="#ffd21f" aria-roledescription="slide" aria-label="UZU STRIKE">
+      <div class="camada fundo" data-prof="10"><img src="img/slides/uzu-arena.webp" alt=""></div>
+      <div class="camada brilho"></div>
+      <div class="palco">
+        <div class="camada kami kami-1" data-prof="16"><img src="img/slides/uzu-kami-blaze-lynx.webp" alt=""></div>
+        <div class="camada kami kami-2" data-prof="16"><img src="img/slides/uzu-kami-tempest-raven.webp" alt=""></div>
+        <div class="camada pers pers-1" data-prof="30"><img src="img/slides/uzu-personagem-hayato.webp" alt=""></div>
+        <div class="camada pers pers-2" data-prof="30"><img src="img/slides/uzu-personagem-akane.webp" alt=""></div>
+        <div class="camada faisca" data-prof="48"></div>
+        <div class="camada piao piao-1" data-prof="48"><img src="img/slides/uzu-piao-hayato.webp" alt=""></div>
+        <div class="camada piao piao-2" data-prof="48"><img src="img/slides/uzu-piao-akane.webp" alt=""></div>
+      </div>
+      <div class="slide-texto">
+        <img class="icone" src="uzu-strike/icone.png" alt="" width="64" height="64">
+        <span class="tipo">Jogo de ação</span>
+        <h2 class="com-logo"><img src="uzu-strike/img/logo.webp" alt="UZU STRIKE"></h2>
+        <p>Lance, guie e derrube! Batalhas de piões com Kamis, peças para montar e um modo história.</p>
+        <div class="botoes">
+          <a class="botao" href="uzu-strike/">Conhecer o jogo</a>
+          <a class="botao secundario" href="https://play.google.com/store/apps/details?id=com.uzustrike.app"><svg class="icone-play" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00d7fe" d="M3.6 1.8 13.5 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1z"/><path fill="#00f076" d="M3.6 1.8c.3-.2.7-.2 1.1 0L17 8.5 13.5 12z"/><path fill="#ff3a44" d="M17 15.5 4.7 22.6c-.4.2-.8.2-1.1 0L13.5 12z"/><path fill="#ffce00" d="M17 8.5l3.3 1.9c1 .6 1 2.6 0 3.2L17 15.5 13.5 12z"/></svg><span><small>Em breve no</small>Google Play</span></a>
+        </div>
+      </div>
+    </article>
+
+    <article class="slide s-kibo" data-cor="#4fb3ff" aria-roledescription="slide" aria-label="Kibo Player">
+      <div class="camada grade"></div>
+      <div class="camada tela tela-2" data-prof="14"><img src="kibo/img/tela-3.webp" alt=""></div>
+      <div class="camada tela tela-1" data-prof="18"><img src="kibo/img/tela-4.webp" alt=""></div>
+      <div class="camada robo" data-prof="36"><img class="flutua" src="img/slides/kibo-robo-gamer-branco-feliz.webp" alt=""></div>
+      <div class="camada nota n1" data-prof="50"><span>♪</span></div>
+      <div class="camada nota n2" data-prof="50"><span>♫</span></div>
+      <div class="camada nota n3" data-prof="50"><span>♪</span></div>
+      <div class="slide-texto">
+        <img class="icone" src="kibo/icone.png" alt="" width="64" height="64">
+        <span class="tipo">Música e vídeo</span>
+        <h2>Kibo Player</h2>
+        <p>Seu player de músicas e vídeos com um robozinho de estimação que reage ao carinho e dança com você.</p>
+        <div class="botoes">
+          <a class="botao" href="kibo/">Conhecer o app</a>
+          <a class="botao secundario" href="https://play.google.com/store/apps/details?id=br.com.convesweb.kibo"><svg class="icone-play" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00d7fe" d="M3.6 1.8 13.5 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1z"/><path fill="#00f076" d="M3.6 1.8c.3-.2.7-.2 1.1 0L17 8.5 13.5 12z"/><path fill="#ff3a44" d="M17 15.5 4.7 22.6c-.4.2-.8.2-1.1 0L13.5 12z"/><path fill="#ffce00" d="M17 8.5l3.3 1.9c1 .6 1 2.6 0 3.2L17 15.5 13.5 12z"/></svg><span><small>Disponível no</small>Google Play</span></a>
+        </div>
+      </div>
+    </article>
+
+    <button class="seta ant" type="button" aria-label="Slide anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+    <button class="seta prox" type="button" aria-label="Próximo slide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+    <div class="slides-pontos" role="group" aria-label="Escolher slide">
+      <button type="button" aria-label="Turbo Bólidos GP"><img src="turbo-bolidos/icone.png" alt=""><span>TURBO BÓLIDOS GP</span><i class="progresso"></i></button>
+      <button type="button" aria-label="UZU STRIKE"><img src="uzu-strike/icone.png" alt=""><span>UZU STRIKE</span><i class="progresso"></i></button>
+      <button type="button" aria-label="Kibo Player"><img src="kibo/icone.png" alt=""><span>KIBO PLAYER</span><i class="progresso"></i></button>
     </div>
-  </a>
+  </section>
 
-  <footer>© 2026 Convesweb</footer>
+  <section class="destaques envolve" aria-labelledby="titulo-destaques">
+    <div class="secao-titulo surge">
+      <span class="tipo" style="color:#ffae1f">Destaques</span>
+      <h2 id="titulo-destaques">Escolha a sua diversão</h2>
+      <p>Jogos e apps para Android, criados no Brasil.</p>
+    </div>
+    <div class="cards">
+      <a class="card surge" href="turbo-bolidos/" style="--c:#ffae1f">
+        <div class="card-arte"><img src="turbo-bolidos/img/destaque.webp" alt="" loading="lazy"></div>
+        <div class="card-corpo">
+          <img class="icone" src="turbo-bolidos/icone.png" alt="">
+          <span class="tipo">Jogo de corrida</span>
+          <h3>TURBO BÓLIDOS GP</h3>
+          <p>Monte seu bólido com chassi, pneus e planador e dispute copas em pistas malucas. Sem internet.</p>
+          <span class="ir">Conhecer <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+      <a class="card surge" href="uzu-strike/" style="--c:#ffd21f">
+        <div class="card-arte"><img src="uzu-strike/img/hero.webp" alt="" loading="lazy"></div>
+        <div class="card-corpo">
+          <img class="icone" src="uzu-strike/icone.png" alt="">
+          <span class="tipo">Jogo de ação</span>
+          <h3>UZU STRIKE</h3>
+          <p>Lance, guie e derrube! Batalhas de piões com Kamis, campeonato, modo história e peças para montar.</p>
+          <span class="ir">Conhecer <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+      <a class="card surge" href="kibo/" style="--c:#4fb3ff">
+        <div class="card-arte"><img src="kibo/img/destaque.webp" alt="" loading="lazy"></div>
+        <div class="card-corpo">
+          <img class="icone" src="kibo/icone.png" alt="">
+          <span class="tipo">Música e vídeo</span>
+          <h3>KIBO PLAYER</h3>
+          <p>Player de músicas e vídeos com um robozinho de olhos de LED, joguinhos, timer e lanterna.</p>
+          <span class="ir">Conhecer <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="sobre envolve" aria-label="Sobre os apps">
+    <div class="sobre-grade">
+      <div class="bloco surge">
+        <h3>📵 Sem cadastro</h3>
+        <p>Nenhum app pede conta, login ou e-mail. É só abrir e usar.</p>
+      </div>
+      <div class="bloco surge">
+        <h3>📱 Seus dados no seu celular</h3>
+        <p>Progresso e preferências ficam guardados só no aparelho. Não há servidores com seus dados.</p>
+      </div>
+      <div class="bloco surge">
+        <h3>🎁 Anúncios opcionais</h3>
+        <p>Os anúncios são premiados: você assiste só se quiser, em troca de moedas ou créditos.</p>
+      </div>
+    </div>
+  </section>
 </main>
+
+<footer class="rodape">
+  <div class="envolve">
+    <span>© 2026 Victor da Silva Rodrigues</span>
+    <nav aria-label="Políticas de privacidade">
+      <a href="kibo/privacidade.html">Privacidade do KIBO PLAYER</a>
+      <a href="turbo-bolidos/privacidade.html">Privacidade do TURBO BÓLIDOS GP</a>
+      <a href="uzu-strike/privacidade.html">Privacidade do UZU STRIKE</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+<script src="carrossel.js"></script>
 </body>
 </html>
