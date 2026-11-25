@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>UZU STRIKE</title>
+  <meta name="description" content="Lance, guie e derrube! Batalhas de piões com Kamis, strikers, modo história e peças para montar. Jogo de ação para Android.">
+  <meta name="theme-color" content="#0a0c14">
+  <meta property="og:title" content="UZU STRIKE">
+  <meta property="og:description" content="Lance, guie e derrube! Batalhas de piões com Kamis, peças e uma história.">
+  <meta property="og:image" content="img/hero.webp">
+  <link rel="icon" href="icone.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Chakra+Petch:ital,wght@0,500;0,600;0,700;1,700&family=Outfit:wght@400;500;700;800&display=swap">
+  <link rel="stylesheet" href="../estilo.css">
+  <link rel="stylesheet" href="pagina.css">
+</head>
+<body class="tema-uzu pagina-uzu">
+
+<header class="topo">
+  <a class="marca" href="../"><span class="ponto" aria-hidden="true"></span>Jogos e Apps</a>
+  <nav aria-label="Aplicativos">
+    <a href="../turbo-bolidos/">TURBO BÓLIDOS GP</a>
+    <a href="./" aria-current="page">UZU STRIKE</a>
+    <a href="../kibo/">KIBO PLAYER</a>
+  </nav>
+</header>
+
+<main>
+  <!-- ================= HERÓI ================= -->
+  <section class="uz-heroi" id="inicio" aria-label="UZU STRIKE">
+    <div class="uz-heroi-fundo"><img src="../img/slides/uzu-arena.webp" alt=""></div>
+    <div class="uz-raios" aria-hidden="true"></div>
+    <div class="uz-reticula" aria-hidden="true"></div>
+
+    <div class="uz-heroi-palco" aria-hidden="true">
+      <img class="uz-h-kami uz-h-kami-e" src="img/kamis/blaze-lynx.webp" alt="">
+      <img class="uz-h-kami uz-h-kami-d" src="img/kamis/tempest-raven.webp" alt="">
+      <img class="uz-h-pers uz-h-pers-e" src="img/strikers/hayato-5.webp" alt="">
+      <img class="uz-h-pers uz-h-pers-d" src="img/strikers/akane-5.webp" alt="">
+      <div class="uz-choque">
+        <img class="uz-h-piao uz-h-piao-e" src="img/pioes/hayato.webp" alt="">
+        <span class="uz-faisca"></span>
+        <img class="uz-h-piao uz-h-piao-d" src="img/pioes/akane.webp" alt="">
+      </div>
+    </div>
+
+    <div class="uz-heroi-texto">
+      <h1 class="uz-logo">
+        <img class="uz-logo-vortice" src="img/camada-vortice.webp" alt="">
+        <img class="uz-logo-letreiro" src="img/camada-letreiro.webp" alt="UZU STRIKE">
+        <img class="uz-logo-selo" src="img/camada-selo.webp" alt="">
+      </h1>
+      <p class="uz-chamada"><span>LANCE!</span> <span>GUIE!</span> <span>DERRUBE!</span></p>
+      <p class="uz-sub">Bem-vindo à Academia UZU, onde os melhores STRIKERS aprendem a vencer com o pião.</p>
+      <div class="uz-botoes">
+        <a class="uz-botao energia" href="https://play.google.com/store/apps/details?id=com.uzustrike.app">
+          <svg class="icone-play" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00d7fe" d="M3.6 1.8 13.5 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1z"/><path fill="#00f076" d="M3.6 1.8c.3-.2.7-.2 1.1 0L17 8.5 13.5 12z"/><path fill="#ff3a44" d="M17 15.5 4.7 22.6c-.4.2-.8.2-1.1 0L13.5 12z"/><path fill="#ffce00" d="M17 8.5l3.3 1.9c1 .6 1 2.6 0 3.2L17 15.5 13.5 12z"/></svg>
+          <span><small>Em breve no</small>Google Play</span>
+        </a>
+        <a class="uz-botao tinta" href="#batalha"><span>Ver o jogo</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Navegação das seções ================= -->
+  <nav class="uz-subnav" aria-label="Seções da página">
+    <div class="uz-subnav-dentro">
+      <a class="uz-subnav-logo" href="#inicio" aria-label="Voltar ao topo"><img src="img/uzu-strike-horizontal.webp" alt=""></a>
+      <div class="uz-abas">
+        <a href="#batalha">Batalha</a>
+        <a href="#strikers">Strikers</a>
+        <a href="#kamis">Kamis</a>
+        <a href="#modos">Modos</a>
+        <a href="#montagem">Montagem</a>
+      </div>
+      <a class="uz-botao energia mini" href="https://play.google.com/store/apps/details?id=com.uzustrike.app"><span>Google Play</span></a>
+    </div>
+  </nav>
+
+  <!-- ================= Faixa ================= -->
+  <div class="uz-faixa" aria-hidden="true">
+    <div class="uz-faixa-trilho">
+      <span>LANCE!</span><b>★</b><span>GUIE!</span><b>★</b><span>DERRUBE!</span><b>★</b><span>RING OUT!</span><b>★</b><span>SLEEP OUT!</span><b>★</b><span>ESPECIAL!</span><b>★</b>
+      <span>LANCE!</span><b>★</b><span>GUIE!</span><b>★</b><span>DERRUBE!</span><b>★</b><span>RING OUT!</span><b>★</b><span>SLEEP OUT!</span><b>★</b><span>ESPECIAL!</span><b>★</b>
+    </div>
+  </div>
+
+  <!-- ================= Batalha (painéis de mangá) ================= -->
+  <section class="uz-secao uz-batalha" id="batalha">
+    <div class="envolve">
+      <div class="uz-titulo revela">
+        <span class="uz-etiqueta">Batalha</span>
+        <h2>Batalhas de piões <em>de verdade</em></h2>
+        <p>Vença por RING OUT, por SLEEP OUT ou despedaçando o pião do rival. Melhor de 3!</p>
+      </div>
+      <div class="uz-manga">
+        <figure class="uz-quadro q1 revela">
+          <img src="img/telas/ja.webp" alt="O lançamento no JÁ!" loading="lazy">
+          <figcaption><strong>1 · LANCE</strong>Arraste da lateral no "JÁ!": a força e a direção do arrasto decidem o lançamento.</figcaption>
+          <span class="uz-sfx" aria-hidden="true">JÁ!</span>
+        </figure>
+        <figure class="uz-quadro q2 revela">
+          <img src="img/telas/batalha.webp" alt="Dois piões batalhando na arena do dojo" loading="lazy">
+          <figcaption><strong>2 · GUIE</strong>Arraste para guiar e dispare investidas rápidas contra o rival.</figcaption>
+          <span class="uz-sfx" aria-hidden="true">VUUSH!</span>
+        </figure>
+        <figure class="uz-quadro q3 revela">
+          <img src="img/telas/batalha-real.webp" alt="Piões se chocando na arena" loading="lazy">
+          <figcaption><strong>3 · TOQUE DE FORÇA</strong>Toque no instante do choque para ganhar força.</figcaption>
+          <span class="uz-sfx" aria-hidden="true">CLANG!</span>
+        </figure>
+        <figure class="uz-quadro q4 revela">
+          <img src="img/telas/especial.webp" alt="O golpe especial com o Kami em cena" loading="lazy">
+          <figcaption><strong>4 · ESPECIAL</strong>Encha a barra, segure e solte: o seu Kami entra em cena com um golpe devastador.</figcaption>
+          <span class="uz-sfx grande" aria-hidden="true">KABOOM!</span>
+        </figure>
+      </div>
+      <ul class="uz-vitorias revela">
+        <li><strong>RING OUT</strong><span>Jogue o rival para fora da arena</span></li>
+        <li><strong>SLEEP OUT</strong><span>Gire por mais tempo que ele</span></li>
+        <li><strong>QUEBRA</strong><span>Despedace o pião adversário</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= Strikers (tela de seleção) ================= -->
+  <section class="uz-secao uz-strikers" id="strikers">
+    <div class="uz-sel-fundo" aria-hidden="true"></div>
+    <div class="envolve">
+      <div class="uz-titulo revela">
+        <span class="uz-etiqueta">Strikers</span>
+        <h2>Escolha o seu <em>striker</em></h2>
+        <p>Cada striker tem o seu estilo, a sua arte e o seu Kami. Toque em um para conhecer.</p>
+      </div>
+      <div class="uz-sel revela">
+        <div class="uz-sel-palco">
+          <img class="uz-sel-kami" src="img/kamis/blaze-lynx.webp" alt="">
+          <img class="uz-sel-pers" src="img/strikers/hayato-3.webp" alt="">
+          <div class="uz-sel-info" aria-live="polite">
+            <span class="uz-sel-frase">O PUNHO DE FOGO</span>
+            <strong class="uz-sel-nome">HAYATO</strong>
+            <span class="uz-sel-kaminome">KAMI · <b>BLAZE LYNX</b></span>
+          </div>
+          <img class="uz-sel-piao" src="img/pioes/hayato.webp" alt="">
+        </div>
+        <div class="uz-sel-grade" role="tablist" aria-label="Strikers"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Kamis (cut-in) ================= -->
+  <section class="uz-secao uz-kamis" id="kamis">
+    <div class="uz-cutin" aria-hidden="true">
+      <div class="uz-cutin-faixa"></div>
+      <img class="uz-cutin-pers" src="img/strikers/hayato-3.webp" alt="">
+      <img class="uz-cutin-kami" src="img/kamis/blaze-lynx.webp" alt="">
+      <span class="uz-cutin-texto">ESPECIAL!</span>
+    </div>
+    <div class="envolve uz-kamis-dentro">
+      <div class="uz-titulo revela">
+        <span class="uz-etiqueta">Kamis</span>
+        <h2>Cada chip guarda um <em>espírito</em></h2>
+        <p>O Kami é o animal-espírito do seu pião. Encha a barra de força e solte o ESPECIAL: ele aparece na arena com um golpe devastador.</p>
+      </div>
+      <div class="uz-kamis-carrossel revela" aria-label="Alguns Kamis">
+        <div class="uz-kamis-trilho"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Modos ================= -->
+  <section class="uz-secao uz-modos" id="modos">
+    <div class="envolve">
+      <div class="uz-titulo revela">
+        <span class="uz-etiqueta">Modos de jogo</span>
+        <h2>Muitos jeitos de <em>girar</em></h2>
+      </div>
+      <div class="uz-modos-grade">
+        <article class="uz-modo destaque revela" style="--c:#ff2d3d">
+          <img src="img/telas/historia.webp" alt="Diálogo do Modo História" loading="lazy">
+          <div><span class="uz-modo-tag">Modo História</span><h3>Seu primeiro dia na academia</h3><p>Um rival que nunca perde, um valentão, um gênio das engrenagens e amigos para a vida. Cenas com diálogo, batalhas valendo 3 estrelas e prêmios.</p></div>
+        </article>
+        <article class="uz-modo revela" style="--c:#ffd31a">
+          <img src="img/telas/campeonato.webp" alt="Chave do campeonato" loading="lazy">
+          <div><span class="uz-modo-tag">Campeonato</span><h3>Do bairro aos mestres</h3><p>Copas com chave de 8 strikers: quartas, semi e final contra um chefe.</p></div>
+        </article>
+        <article class="uz-modo revela" style="--c:#3fd0ff">
+          <img src="img/telas/desafio.webp" alt="Torre do Desafio dos Kamis" loading="lazy">
+          <div><span class="uz-modo-tag">Desafio dos Kamis</span><h3>Uma torre nova todo dia</h3><p>Suba os andares enfrentando os próprios Kamis.</p></div>
+        </article>
+        <article class="uz-modo revela" style="--c:#ff2fa8">
+          <img src="img/telas/batalha-real.webp" alt="Batalha Real com quatro piões" loading="lazy">
+          <div><span class="uz-modo-tag">Batalha Real</span><h3>Quatro piões, uma arena</h3><p>O último girando vence.</p></div>
+        </article>
+        <article class="uz-modo mini revela" style="--c:#58f5a6">
+          <div><span class="uz-modo-tag">Desafio do Dia</span><p>Regras novas a cada dia, com rival e prêmio próprios.</p></div>
+        </article>
+        <article class="uz-modo mini revela" style="--c:#ff8a1f">
+          <div><span class="uz-modo-tag">Sobrevivência</span><p>Vença em sequência até o seu pião não aguentar mais.</p></div>
+        </article>
+        <article class="uz-modo mini revela" style="--c:#9d7bff">
+          <div><span class="uz-modo-tag">Partida Rápida</span><p>Escolha os strikers e lute: sozinho contra a CPU ou a dois no mesmo celular.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Montagem ================= -->
+  <section class="uz-secao uz-montagem" id="montagem">
+    <div class="envolve uz-montagem-dentro">
+      <div class="uz-montagem-texto">
+        <div class="uz-titulo revela">
+          <span class="uz-etiqueta">Montagem</span>
+          <h2>Monte o <em>seu</em> pião</h2>
+          <p>Compre peças na loja, funda cópias para subir o grau e monte o pião perfeito para o seu estilo.</p>
+        </div>
+        <ol class="uz-pecas revela">
+          <li><b>Anel</b><span>Ataque e formato do choque</span></li>
+          <li><b>Disco</b><span>Peso e estabilidade</span></li>
+          <li><b>Engrenagem</b><span>Rotação e resistência</span></li>
+          <li><b>Base</b><span>Velocidade e movimento</span></li>
+          <li><b>Chip</b><span>O Kami do pião</span></li>
+        </ol>
+      </div>
+      <div class="uz-montagem-arte revela">
+        <img class="uz-montagem-tela" src="img/telas/montagem.webp" alt="Tela de montagem do pião" loading="lazy">
+        <div class="uz-pioes-orbita" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Chamada final ================= -->
+  <section class="uz-final">
+    <div class="uz-final-fundo" aria-hidden="true"><img src="img/telas/vs.webp" alt="" loading="lazy"></div>
+    <div class="uz-raios" aria-hidden="true"></div>
+    <div class="envolve uz-final-dentro revela">
+      <img class="uz-final-logo" src="img/uzu-strike.webp" alt="UZU STRIKE" loading="lazy">
+      <p>Jogue offline. Os anúncios são opcionais: assista se quiser ganhar moedas extras.</p>
+      <div class="uz-botoes">
+        <a class="uz-botao energia" href="https://play.google.com/store/apps/details?id=com.uzustrike.app">
+          <svg class="icone-play" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00d7fe" d="M3.6 1.8 13.5 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1z"/><path fill="#00f076" d="M3.6 1.8c.3-.2.7-.2 1.1 0L17 8.5 13.5 12z"/><path fill="#ff3a44" d="M17 15.5 4.7 22.6c-.4.2-.8.2-1.1 0L13.5 12z"/><path fill="#ffce00" d="M17 8.5l3.3 1.9c1 .6 1 2.6 0 3.2L17 15.5 13.5 12z"/></svg>
+          <span><small>Em breve no</small>Google Play</span>
+        </a>
+        <a class="uz-botao tinta" href="privacidade.html"><span>Política de privacidade</span></a>
+      </div>
+      <ul class="uz-privacidade">
+        <li>Sem cadastro, login, chat ou servidor próprio.</li>
+        <li>Seu progresso fica só no seu aparelho.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="secao alt">
+    <div class="envolve">
+      <div class="secao-titulo"><span class="tipo">Conheça também</span></div>
+      <div class="outros">
+        <a class="outro" href="../turbo-bolidos/"><img src="../turbo-bolidos/icone.png" alt=""><div><strong>TURBO BÓLIDOS GP</strong><span>Corrida arcade 100% offline</span></div></a>
+        <a class="outro" href="../kibo/"><img src="../kibo/icone.png" alt=""><div><strong>KIBO PLAYER</strong><span>Player com um robozinho de estimação</span></div></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="envolve">
+    <span>© 2026 Victor da Silva Rodrigues</span>
+    <nav><a href="../">Todos os apps</a><a href="privacidade.html">Política de privacidade</a></nav>
+  </div>
+</footer>
+
+<script src="dados.js"></script>
+<script src="../site.js"></script>
+<script src="pagina.js"></script>
+</body>
+</html>
