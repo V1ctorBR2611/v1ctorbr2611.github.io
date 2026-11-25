@@ -2,36 +2,194 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kibo Player</title>
-  <meta name="description" content="Player de músicas e vídeos com um robozinho de estimação de olhos de LED.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>KIBO PLAYER</title>
+  <meta name="description" content="Player de músicas e vídeos com um robozinho de estimação de olhos de LED que reage ao carinho, aos cutucões e dança com as suas músicas.">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:title" content="KIBO PLAYER">
+  <meta property="og:description" content="Player de músicas e vídeos com um robozinho de estimação de olhos de LED.">
+  <meta property="og:image" content="img/destaque.webp">
+  <link rel="icon" href="icone.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Doto:wght@700;900&family=Outfit:wght@400;500;700;800&display=swap">
   <link rel="stylesheet" href="../estilo.css">
+  <link rel="stylesheet" href="pagina.css">
 </head>
-<body>
+<body class="tema-kibo pagina-kibo">
+
+<header class="topo">
+  <a class="marca" href="../"><span class="ponto" aria-hidden="true"></span>Jogos e Apps</a>
+  <nav aria-label="Aplicativos">
+    <a href="../turbo-bolidos/">TURBO BÓLIDOS GP</a>
+    <a href="../uzu-strike/">UZU STRIKE</a>
+    <a href="./" aria-current="page">KIBO PLAYER</a>
+  </nav>
+</header>
+
 <main>
-  <div class="topo">
-    <img src="icone.png" alt="Ícone do Kibo Player">
-    <div>
-      <h1>Kibo Player</h1>
-      <p class="sub">Player de músicas e vídeos com um robozinho de estimação.</p>
+  <!-- ================= Herói: o Kibo de verdade, que reage ================= -->
+  <section class="kb-heroi" id="inicio" aria-label="Kibo Player">
+    <div class="kb-led-fundo" aria-hidden="true"></div>
+    <div class="kb-heroi-dentro">
+      <div class="kb-heroi-texto">
+        <span class="kb-tipo">Música e vídeo · Android</span>
+        <h1 class="kb-titulo-led">KIBO<br><span>PLAYER</span></h1>
+        <p>Seu mídia player completo, com um robozinho de olhos de LED que reage ao carinho, aos cutucões e dança com as suas músicas.</p>
+        <div class="kb-botoes">
+          <a class="kb-botao" href="https://play.google.com/store/apps/details?id=br.com.convesweb.kibo">
+            <svg class="icone-play" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00d7fe" d="M3.6 1.8 13.5 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1z"/><path fill="#00f076" d="M3.6 1.8c.3-.2.7-.2 1.1 0L17 8.5 13.5 12z"/><path fill="#ff3a44" d="M17 15.5 4.7 22.6c-.4.2-.8.2-1.1 0L13.5 12z"/><path fill="#ffce00" d="M17 8.5l3.3 1.9c1 .6 1 2.6 0 3.2L17 15.5 13.5 12z"/></svg>
+            <span><small>Disponível no</small>Google Play</span>
+          </a>
+          <a class="kb-botao contorno" href="#sentimentos"><span>Conhecer o Kibo</span></a>
+        </div>
+      </div>
+      <div class="kb-robo-area">
+        <button class="kb-robo" type="button" aria-label="Tocar no Kibo (ele reage e fala)">
+          <span class="kb-halo" aria-hidden="true"></span>
+          <img class="kb-robo-img" src="img/robo/expr-feliz.webp" alt="O Kibo, um robozinho com fones e olhos de LED">
+        </button>
+        <div class="kb-balao" aria-live="polite"></div>
+        <p class="kb-dica"><span class="kb-dedo" aria-hidden="true">👆</span> Toque no Kibo <small>(com som)</small></p>
+      </div>
     </div>
-  </div>
+    <div class="kb-notas" aria-hidden="true"><i>♪</i><i>♫</i><i>♪</i><i>♬</i><i>♫</i></div>
+  </section>
 
-  <a class="botao" href="https://play.google.com/store/apps/details?id=br.com.convesweb.kibo">Baixar no Google Play</a>
-  <a class="botao secundario" href="privacidade.html">Política de privacidade</a>
+  <!-- ================= Sentimentos ================= -->
+  <section class="kb-secao kb-sentimentos" id="sentimentos">
+    <div class="envolve kb-dois">
+      <div>
+        <div class="kb-cabeca surge">
+          <span class="kb-tipo">O robozinho</span>
+          <h2>Ele tem <em>sentimentos</em></h2>
+          <p>Faça carinho na testa, cutuque a bochecha, deixe ele sozinho um tempo... O Kibo reage a tudo com os olhos de LED e com a vozinha dele. Toque numa emoção:</p>
+        </div>
+        <div class="kb-emocoes surge" role="group" aria-label="Emoções do Kibo"></div>
+      </div>
+      <div class="kb-painel-robo surge">
+        <div class="kb-painel-tela">
+          <img class="kb-emocao-img" src="img/robo/expr-neutro.webp" alt="">
+        </div>
+        <span class="kb-emocao-nome">Neutro</span>
+      </div>
+    </div>
+  </section>
 
-  <h2>O que ele faz</h2>
-  <ul>
-    <li>Um robozinho com olhos de LED que reage ao carinho e aos cutucões e dança com as suas músicas</li>
-    <li>Player de músicas e vídeos, com janela flutuante e opção de ouvir o vídeo como áudio</li>
-    <li>Relógio, timer, cronômetro e lanterna</li>
-    <li>Jogos: dado, moeda, Simon, jokenpô, pong e jogo da velha</li>
-    <li>Fones e cores do casco e dos olhos para personalizar o Kibo</li>
-    <li>Prefere só o player? Use sem o Kibo, com o menu na tela toda</li>
-    <li>Widget animado na tela inicial</li>
-  </ul>
+  <!-- ================= Player ================= -->
+  <section class="kb-secao kb-player" id="player">
+    <div class="envolve kb-dois inverte">
+      <div class="kb-celulares surge" aria-hidden="true">
+        <div class="kb-celular c1"><img src="img/tela-3.webp" alt="" loading="lazy"></div>
+        <div class="kb-celular c2"><img src="img/tela-4.webp" alt="" loading="lazy"></div>
+      </div>
+      <div>
+        <div class="kb-cabeca surge">
+          <span class="kb-tipo">O player</span>
+          <h2>Música e vídeo <em>sem complicação</em></h2>
+          <p>Toque os arquivos que já estão no seu celular, sem conta e sem internet.</p>
+        </div>
+        <ul class="kb-lista surge">
+          <li><b>♪</b><div><strong>Suas músicas</strong><span>Listas, aleatório e repetição, com controles na notificação e na tela de bloqueio.</span></div></li>
+          <li><b>▶</b><div><strong>Seus vídeos</strong><span>Com janela flutuante e a opção de ouvir o vídeo só como áudio.</span></div></li>
+          <li><b>♥</b><div><strong>Ele dança junto</strong><span>Enquanto a música toca, o Kibo balança e curte no ritmo.</span></div></li>
+          <li><b>▦</b><div><strong>Widget animado</strong><span>O Kibo na tela inicial do seu celular.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-  <footer><a href="../">Convesweb Apps</a> · © 2026 Convesweb</footer>
+  <!-- ================= Personalize ================= -->
+  <section class="kb-secao kb-visuais" id="personalize">
+    <div class="envolve">
+      <div class="kb-cabeca centro surge">
+        <span class="kb-tipo">Personalize</span>
+        <h2>Do jeito <em>que você quiser</em></h2>
+        <p>Fones de todos os estilos, cores de casco e cores de olhos. Escolha um visual:</p>
+      </div>
+      <div class="kb-vitrine surge">
+        <div class="kb-vitrine-palco">
+          <img class="kb-vitrine-img" src="img/robo/visual-gamer.webp" alt="">
+        </div>
+        <span class="kb-vitrine-nome">Fone Gamer</span>
+        <div class="kb-vitrine-lista" role="tablist" aria-label="Visuais do Kibo"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Muito mais ================= -->
+  <section class="kb-secao kb-mais" id="mais">
+    <div class="envolve">
+      <div class="kb-cabeca centro surge">
+        <span class="kb-tipo">E ainda tem</span>
+        <h2>Ferramentas <em>e joguinhos</em></h2>
+      </div>
+      <div class="kb-mais-grade">
+        <div class="kb-bloco surge">
+          <h3>Ferramentas</h3>
+          <ul class="kb-chips"><li>Relógio</li><li>Timer</li><li>Cronômetro</li><li>Lanterna</li><li>Gravador</li></ul>
+        </div>
+        <div class="kb-bloco surge">
+          <h3>Joguinhos</h3>
+          <ul class="kb-chips"><li>Dado</li><li>Moeda</li><li>Simon</li><li>Jokenpô</li><li>Pong</li><li>Jogo da velha</li></ul>
+        </div>
+        <div class="kb-bloco surge">
+          <h3>Do seu jeito</h3>
+          <p>Prefere só o player? Use sem o Kibo, com o menu na tela toda.</p>
+        </div>
+      </div>
+      <div class="galeria retrato kb-galeria surge">
+        <img src="img/tela-1.webp" alt="Tela inicial com o Kibo" width="540" height="1080" loading="lazy">
+        <img src="img/tela-2.webp" alt="Menu de funções" width="540" height="1080" loading="lazy">
+        <img src="img/tela-3.webp" alt="Player de músicas" width="540" height="1080" loading="lazy">
+        <img src="img/tela-4.webp" alt="Lista de vídeos" width="540" height="1080" loading="lazy">
+        <img src="img/tela-5.webp" alt="Escolha de fones para o Kibo" width="540" height="1080" loading="lazy">
+        <img src="img/tela-6.webp" alt="Jogo da velha" width="540" height="1080" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Final ================= -->
+  <section class="kb-final">
+    <div class="kb-led-fundo" aria-hidden="true"></div>
+    <div class="envolve kb-final-dentro surge">
+      <img class="kb-final-robo" src="img/robo/visual-gatinho.webp" alt="" loading="lazy">
+      <h2 class="kb-titulo-led pequeno">LEVE O KIBO<br><span>PRA CASA</span></h2>
+      <div class="kb-botoes centro">
+        <a class="kb-botao" href="https://play.google.com/store/apps/details?id=br.com.convesweb.kibo">
+          <svg class="icone-play" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00d7fe" d="M3.6 1.8 13.5 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1z"/><path fill="#00f076" d="M3.6 1.8c.3-.2.7-.2 1.1 0L17 8.5 13.5 12z"/><path fill="#ff3a44" d="M17 15.5 4.7 22.6c-.4.2-.8.2-1.1 0L13.5 12z"/><path fill="#ffce00" d="M17 8.5l3.3 1.9c1 .6 1 2.6 0 3.2L17 15.5 13.5 12z"/></svg>
+          <span><small>Disponível no</small>Google Play</span>
+        </a>
+        <a class="kb-botao contorno" href="privacidade.html"><span>Política de privacidade</span></a>
+      </div>
+      <ul class="kb-privacidade">
+        <li>Sem contas e sem servidores: tudo fica no seu celular.</li>
+        <li>Suas músicas, vídeos e gravações nunca saem do aparelho.</li>
+        <li>Anúncios só quando você escolhe assistir, em troca de créditos.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="secao alt">
+    <div class="envolve">
+      <div class="secao-titulo"><span class="tipo">Conheça também</span></div>
+      <div class="outros">
+        <a class="outro" href="../turbo-bolidos/"><img src="../turbo-bolidos/icone.png" alt=""><div><strong>TURBO BÓLIDOS GP</strong><span>Corrida arcade 100% offline</span></div></a>
+        <a class="outro" href="../uzu-strike/"><img src="../uzu-strike/icone.png" alt=""><div><strong>UZU STRIKE</strong><span>Batalhas de piões com Kamis</span></div></a>
+      </div>
+    </div>
+  </section>
 </main>
+
+<footer class="rodape">
+  <div class="envolve">
+    <span>© 2026 Victor da Silva Rodrigues</span>
+    <nav><a href="../">Todos os apps</a><a href="privacidade.html">Política de privacidade</a></nav>
+  </div>
+</footer>
+
+<script src="dados.js"></script>
+<script src="../site.js"></script>
+<script src="pagina.js"></script>
 </body>
 </html>
