@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>ONDALUME</title>
+  <meta name="description" content="Ondalume: um puzzle de palavras com gravidade no fundo do mar. Ligue letras, forme palavras e mergulhe da lagoa ensolarada até o abismo luminoso. Em breve para Android.">
+  <meta name="theme-color" content="#06263f">
+  <meta property="og:title" content="ONDALUME">
+  <meta property="og:description" content="Mergulhe nas palavras. Em breve para Android.">
+  <meta property="og:image" content="destaque.png">
+  <link rel="icon" href="icone.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@600;700;800&family=Outfit:wght@400;500;700;800&display=swap">
+  <link rel="stylesheet" href="../estilo.css">
+  <link rel="stylesheet" href="pagina.css">
+</head>
+<body class="pagina-ondalume">
+
+<!-- O mar: fundo fixo que escurece conforme você desce a página -->
+<div class="ol-mar" aria-hidden="true">
+  <div class="ol-raios"></div>
+  <div class="ol-plancton"></div>
+  <div class="ol-cardume"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+</div>
+
+<!-- Profundímetro -->
+<div class="ol-prof" aria-hidden="true">
+  <div class="ol-prof-trilho"><b></b></div>
+  <div class="ol-prof-txt"><strong class="ol-prof-m">0 m</strong><span class="ol-prof-z">Lagoa de Luz</span></div>
+</div>
+
+<header class="topo">
+  <a class="marca" href="../"><span class="ponto" aria-hidden="true"></span>Jogos e Apps</a>
+  <nav aria-label="Aplicativos">
+    <a href="../turbo-bolidos/">TURBO BÓLIDOS GP</a>
+    <a href="../uzu-strike/">UZU STRIKE</a>
+    <a href="../kibo/">KIBO PLAYER</a>
+    <a href="../letranca/">LETRANÇA</a>
+    <a href="./" aria-current="page">ONDALUME</a>
+  </nav>
+</header>
+
+<main>
+  <!-- ================= Herói: a lagoa de luz ================= -->
+  <section class="ol-heroi" id="inicio" aria-label="Ondalume" data-prof="0">
+    <div class="ol-heroi-dentro">
+      <div class="ol-heroi-texto">
+        <span class="ol-selo">Em breve · Android</span>
+        <h1 class="ol-logo" aria-label="Ondalume"><span class="onda">Onda</span><span class="lume">lume</span></h1>
+        <svg class="ol-onda" viewBox="0 0 240 16" aria-hidden="true"><path d="M2 8c20-10 40-10 60 0s40 10 60 0 40-10 60 0 30 8 56 2"/></svg>
+        <p class="ol-sub">MERGULHE NAS PALAVRAS</p>
+        <p class="ol-desc">Um puzzle de palavras com gravidade no fundo do mar. Deslize o dedo pelas letras, forme palavras e veja as peças virarem bolhas. Cada fase é um mergulho, da lagoa ensolarada até o abismo que brilha no escuro.</p>
+        <div class="ol-botoes">
+          <a class="ol-botao" href="https://play.google.com/store/apps/details?id=br.com.ondalume">
+            <svg class="icone-play" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00d7fe" d="M3.6 1.8 13.5 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1z"/><path fill="#00f076" d="M3.6 1.8c.3-.2.7-.2 1.1 0L17 8.5 13.5 12z"/><path fill="#ff3a44" d="M17 15.5 4.7 22.6c-.4.2-.8.2-1.1 0L13.5 12z"/><path fill="#ffce00" d="M17 8.5l3.3 1.9c1 .6 1 2.6 0 3.2L17 15.5 13.5 12z"/></svg>
+            <span><small>Em breve no</small>Google Play</span>
+          </a>
+          <a class="ol-botao vidro" href="#como-jogar"><span>Experimente aqui</span></a>
+        </div>
+      </div>
+      <div class="ol-heroi-arte" aria-hidden="true">
+        <div class="ol-celular ol-c1"><img src="img/jogo-lagoa.webp" alt=""></div>
+        <div class="ol-celular ol-c2"><img src="img/tela-abertura.webp" alt=""></div>
+        <div class="ol-heroi-lume" data-lume="feliz"></div>
+        <svg class="ol-fio-luz" viewBox="0 0 400 200" aria-hidden="true"><path d="M40 40C110 10 150 120 230 110S330 60 390 120"/></svg>
+        <div class="ol-luz">
+          <span class="ol-peca ouro" style="--r:-7deg;--d:0s">L<i>2</i></span><span class="ol-peca ouro" style="--r:3deg;--d:.3s">U<i>1</i></span><span class="ol-peca ouro" style="--r:-3deg;--d:.6s">Z<i>8</i></span>
+        </div>
+      </div>
+    </div>
+    <a class="ol-descer" href="#como-jogar" aria-label="Descer"><span></span></a>
+  </section>
+
+  <!-- ================= Como jogar: tabuleiro de verdade ================= -->
+  <section class="ol-secao ol-demo" id="como-jogar" data-prof="45">
+    <div class="envolve ol-dois">
+      <div class="ol-demo-texto">
+        <div class="ol-cabeca surge">
+          <span class="ol-tipo">Como jogar</span>
+          <h2>Arraste o dedo e <em>mergulhe</em></h2>
+          <p>Ligue letras vizinhas, em qualquer direção, inclusive na diagonal. As letras usadas viram bolhas e sobem, as de cima afundam no lugar e novas letras descem da superfície.</p>
+        </div>
+        <ol class="ol-passos surge">
+          <li><b>1</b><div><strong>Forme palavras</strong><span>Mínimo de 3 letras. Acentos não importam: CORACAO vale CORAÇÃO.</span></div></li>
+          <li><b>2</b><div><strong>Cuide do seu ar</strong><span>Cada palavra gasta 1 de ar. Planeje bem cada mergulho!</span></div></li>
+          <li><b>3</b><div><strong>Palavras longas valem mais</strong><span>Com 5 letras ou mais, nascem peças mágicas.</span></div></li>
+        </ol>
+        <p class="ol-demo-nota surge">Tente aqui mesmo, é uma amostra do jogo com palavras comuns. →</p>
+      </div>
+      <div class="ol-demo-jogo surge">
+        <div class="ol-hud">
+          <div class="ol-hud-ar"><strong class="ol-ar">15</strong><small>AR</small></div>
+          <div class="ol-hud-pontos"><small>PONTOS</small><strong class="ol-pontos">0</strong></div>
+          <button class="ol-som" type="button" aria-pressed="true" aria-label="Som ligado">♪</button>
+        </div>
+        <div class="ol-palavra" aria-live="polite"><span class="ol-palavra-txt">&nbsp;</span></div>
+        <div class="ol-tab" role="application" aria-label="Tabuleiro de letras: arraste por letras vizinhas para formar palavras">
+          <div class="ol-tab-pecas"></div>
+          <svg class="ol-tab-linha" aria-hidden="true"><polyline points=""/></svg>
+          <div class="ol-elogio" aria-hidden="true"></div>
+          <div class="ol-fim" hidden>
+            <div class="ol-fim-lume" data-lume="comemorando"></div>
+            <strong>Mergulho completo!</strong>
+            <span class="ol-fim-pontos"></span>
+            <span class="ol-fim-melhor"></span>
+            <button class="ol-botao" type="button" data-acao="novo"><span>Mergulhar de novo</span></button>
+          </div>
+        </div>
+        <div class="ol-demo-ajudas">
+          <button type="button" data-acao="lanterna"><span data-ic="LANTERNA"></span>Lanterna</button>
+          <button type="button" data-acao="mare"><span data-ic="MARE"></span>Maré</button>
+          <button type="button" data-acao="novo"><span data-ic="BOLHA"></span>Recomeçar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Peças especiais ================= -->
+  <section class="ol-secao ol-especiais" id="especiais" data-prof="230">
+    <div class="envolve">
+      <div class="ol-cabeca centro surge">
+        <span class="ol-tipo">Peças especiais</span>
+        <h2>Palavras longas criam <em>peças mágicas</em></h2>
+        <p>Elas nascem no lugar da última letra. Use uma delas numa palavra e veja o mar se iluminar.</p>
+      </div>
+      <div class="ol-esp-grade">
+        <article class="ol-esp surge" style="--cor:#b48cff" data-efeito="linha">
+          <div class="ol-esp-mini" aria-hidden="true"></div>
+          <div class="ol-esp-txt">
+            <span class="ol-esp-ic" data-ic="AGUA_VIVA"></span>
+            <h3>Água-viva</h3><span class="ol-esp-n">5 letras</span>
+            <p>Um choque de luz limpa a linha inteira.</p>
+          </div>
+        </article>
+        <article class="ol-esp surge" style="--cor:#ff8a7a" data-efeito="area">
+          <div class="ol-esp-mini" aria-hidden="true"></div>
+          <div class="ol-esp-txt">
+            <span class="ol-esp-ic" data-ic="OURICO"></span>
+            <h3>Ouriço</h3><span class="ol-esp-n">6 letras</span>
+            <p>Explode tudo o que está em volta.</p>
+          </div>
+        </article>
+        <article class="ol-esp surge" style="--cor:#ffcb5c" data-efeito="curinga">
+          <div class="ol-esp-mini" aria-hidden="true"></div>
+          <div class="ol-esp-txt">
+            <span class="ol-esp-ic" data-ic="ESTRELA_MAR"></span>
+            <h3>Estrela-do-mar</h3><span class="ol-esp-n">7 letras ou mais</span>
+            <p>Vale qualquer letra e dobra a palavra.</p>
+          </div>
+        </article>
+      </div>
+      <div class="ol-obst surge">
+        <div class="ol-obst-item"><span data-ic="GELO"></span><div><strong>Gelo</strong><span>Use a letra para rachar o gelo.</span></div></div>
+        <div class="ol-obst-item"><span data-ic="ROCHA"></span><div><strong>Rochas</strong><span>Forme palavras ao lado para quebrá-las.</span></div></div>
+        <div class="ol-obst-item"><span data-ic="TESOURO"></span><div><strong>Tesouros</strong><span>Leve as pérolas até o fundo do tabuleiro.</span></div></div>
+        <div class="ol-obst-item"><span data-ic="ESTRELA"></span><div><strong>Três estrelas</strong><span>Cumpra os objetivos e capriche nos pontos.</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= A descida: as zonas ================= -->
+  <section class="ol-secao ol-descida" id="zonas" data-prof="700">
+    <div class="envolve">
+      <div class="ol-cabeca centro surge">
+        <span class="ol-tipo">O mergulho</span>
+        <h2>Da lagoa de luz ao <em>abismo luminoso</em></h2>
+        <p class="ol-descida-resumo"></p>
+      </div>
+      <ol class="ol-zonas"></ol>
+    </div>
+  </section>
+
+  <!-- ================= Ajudas ================= -->
+  <section class="ol-secao ol-ajudas" id="ajudas" data-prof="3600">
+    <div class="envolve ol-dois inverte">
+      <div class="ol-celular ol-ajudas-cel surge" aria-hidden="true"><img src="img/tela-lanterna.webp" alt="" loading="lazy"></div>
+      <div>
+        <div class="ol-cabeca surge">
+          <span class="ol-tipo">Ajudas</span>
+          <h2>Muitas ajudas, <em>quando precisar</em></h2>
+          <p>E o Lume, o peixinho-lanterna, acompanha você com dicas a cada novidade.</p>
+        </div>
+        <ul class="ol-ajudas-lista surge">
+          <li><span class="ol-bolha" data-ic="LANTERNA"></span><div><strong>Lanterna</strong><span>Ilumina o caminho de uma boa palavra.</span></div></li>
+          <li><span class="ol-bolha" data-ic="MARE"></span><div><strong>Maré</strong><span>Embaralha as letras num redemoinho.</span></div></li>
+          <li><span class="ol-bolha" data-ic="ARPAO"></span><div><strong>Arpão</strong><span>Remove qualquer peça, gelo ou rocha.</span></div></li>
+          <li><span class="ol-bolha" data-ic="CONCHA"></span><div><strong>Concha</strong><span>Troca uma letra pela que você quiser.</span></div></li>
+          <li><span class="ol-bolha" data-ic="CILINDRO"></span><div><strong>Cilindro de ar</strong><span>Mais 5 de oxigênio quando faltar.</span></div></li>
+        </ul>
+        <div class="ol-premios surge">
+          <span><i data-ic="PRESENTE"></i>Prêmio diário</span>
+          <span><i data-ic="BAU"></i>Baús de estrelas e de zona</span>
+          <span><i data-ic="PEROLA"></i>Pérolas a cada vitória</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Galeria ================= -->
+  <section class="ol-secao ol-galeria" id="telas" data-prof="5600">
+    <div class="envolve">
+      <div class="ol-cabeca centro surge">
+        <span class="ol-tipo">Telas</span>
+        <h2>Bonito parado, <em>lindo em movimento</em></h2>
+        <p>Visual luminoso, música original tranquila e sons aquáticos suaves.</p>
+      </div>
+    </div>
+    <div class="ol-faixa surge">
+      <figure><img src="img/mapa-lagoa.webp" alt="Mapa na Lagoa de Luz" loading="lazy"><figcaption>Mapa · Lagoa de Luz</figcaption></figure>
+      <figure><img src="img/tela-especiais.webp" alt="Uma peça especial explodindo" loading="lazy"><figcaption>Peças mágicas</figcaption></figure>
+      <figure><img src="img/mapa-naufragio.webp" alt="Mapa no Naufrágio Esquecido" loading="lazy"><figcaption>Mapa · Naufrágio Esquecido</figcaption></figure>
+      <figure><img src="img/tela-vitoria.webp" alt="Vitória com três estrelas" loading="lazy"><figcaption>Mergulho perfeito!</figcaption></figure>
+      <figure><img src="img/mapa-anemonas.webp" alt="Mapa no Jardim de Anêmonas" loading="lazy"><figcaption>Mapa · Jardim de Anêmonas</figcaption></figure>
+      <figure><img src="img/mapa-crepuscular.webp" alt="Mapa na Zona Crepuscular" loading="lazy"><figcaption>Mapa · Zona Crepuscular</figcaption></figure>
+      <figure><img src="img/mapa-abismo.webp" alt="Mapa no Abismo de Lume" loading="lazy"><figcaption>Mapa · Abismo de Lume</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- ================= Final: o abismo ================= -->
+  <section class="ol-final" data-prof="11000">
+    <div class="envolve ol-final-dentro surge">
+      <div class="ol-final-lume" data-lume="comemorando" aria-hidden="true"></div>
+      <h2 class="ol-logo pequeno"><span class="onda">Em breve</span> <span class="lume">no seu celular</span></h2>
+      <p>Treine o vocabulário e descanse a mente, uma palavra de cada vez.</p>
+      <div class="ol-botoes centro">
+        <a class="ol-botao" href="https://play.google.com/store/apps/details?id=br.com.ondalume">
+          <svg class="icone-play" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00d7fe" d="M3.6 1.8 13.5 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1z"/><path fill="#00f076" d="M3.6 1.8c.3-.2.7-.2 1.1 0L17 8.5 13.5 12z"/><path fill="#ff3a44" d="M17 15.5 4.7 22.6c-.4.2-.8.2-1.1 0L13.5 12z"/><path fill="#ffce00" d="M17 8.5l3.3 1.9c1 .6 1 2.6 0 3.2L17 15.5 13.5 12z"/></svg>
+          <span><small>Em breve no</small>Google Play</span>
+        </a>
+        <a class="ol-botao vidro" href="privacidade.html"><span>Política de privacidade</span></a>
+      </div>
+      <ul class="ol-privacidade">
+        <li>Sem cadastro e sem login: o progresso fica só no seu celular.</li>
+        <li>Funciona sem internet, com o dicionário dentro do jogo.</li>
+        <li>Gratuito, com anúncios. Vídeos com prêmio são sempre opcionais.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="secao ol-outros">
+    <div class="envolve">
+      <div class="secao-titulo"><span class="tipo">Conheça também</span></div>
+      <div class="outros">
+        <a class="outro" href="../turbo-bolidos/"><img src="../turbo-bolidos/icone.png" alt=""><div><strong>TURBO BÓLIDOS GP</strong><span>Corrida arcade 100% offline</span></div></a>
+        <a class="outro" href="../uzu-strike/"><img src="../uzu-strike/icone.png" alt=""><div><strong>UZU STRIKE</strong><span>Batalhas de piões com Kamis</span></div></a>
+        <a class="outro" href="../kibo/"><img src="../kibo/icone.png" alt=""><div><strong>KIBO PLAYER</strong><span>Player com um robozinho de estimação</span></div></a>
+        <a class="outro" href="../letranca/"><img src="../letranca/icone.png" alt=""><div><strong>LETRANÇA</strong><span>Palavras cruzadas costuradas · em breve</span></div></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="envolve">
+    <span>© 2026 Victor da Silva Rodrigues</span>
+    <nav><a href="../">Todos os apps</a><a href="privacidade.html">Política de privacidade</a></nav>
+  </div>
+</footer>
+
+<script src="dados.js"></script>
+<script src="palavras.js"></script>
+<script src="../site.js"></script>
+<script src="pagina.js"></script>
+</body>
+</html>

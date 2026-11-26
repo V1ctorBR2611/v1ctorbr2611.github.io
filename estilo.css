@@ -47,6 +47,7 @@ h1, h2, h3 { font-family: var(--fonte-titulo); line-height: 1.15; margin: 0; }
 .topo nav { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
 .topo nav a { color: var(--texto); text-decoration: none; font-size: .82rem; font-weight: 600; letter-spacing: .04em; padding: 6px 12px; border-radius: 999px; opacity: .8; }
 @media (max-width: 640px) { .topo nav { display: none; } }
+@media (min-width: 641px) and (max-width: 1040px) { .topo nav { gap: 2px; flex-wrap: nowrap; } .topo nav a { font-size: .72rem; letter-spacing: .02em; padding: 6px 8px; white-space: nowrap; } .marca { white-space: nowrap; } }
 .topo nav a:hover, .topo nav a[aria-current] { opacity: 1; background: rgba(255, 255, 255, .08); }
 
 /* ---------- Página inicial: apresentação de slides em camadas ---------- */
@@ -366,3 +367,51 @@ footer.rodape a:hover { color: var(--texto); }
   background: repeating-linear-gradient(0deg, rgba(59,37,22,.05) 0 2px, transparent 2px 6px), #f3ead8 !important; }
 .card-letranca img { width: 30% !important; height: auto !important; aspect-ratio: 618 / 1338; object-fit: cover; border-radius: 12px; border: 4px solid #2c1d12; margin-bottom: -16%; }
 .card-letranca img:first-child { rotate: -5deg; } .card-letranca img:last-child { rotate: 5deg; }
+
+/* --- Slide do Ondalume: fundo do mar com raios de luz, bolhas, dois celulares, o Lume e peças de vidro --- */
+.s-ondalume { background: radial-gradient(70% 70% at 72% 30%, rgba(127,248,255,.25), transparent 70%), linear-gradient(180deg, #1f9fbd 0%, #0b4f7c 55%, #06263f 100%); }
+.s-ondalume::after { background: linear-gradient(90deg, rgba(3,17,32,.8) 0%, rgba(3,17,32,.45) 32%, transparent 58%), linear-gradient(0deg, rgba(3,17,32,.65) 0%, transparent 28%); }
+.s-ondalume .raios { inset: -10% -10% 30% 20%; --z: 0; opacity: .5; transform-origin: 50% 0;
+  background: repeating-linear-gradient(100deg, transparent 0 7%, rgba(255,255,255,.18) 8%, transparent 10.5%, transparent 15%, rgba(255,255,255,.1) 16.5%, transparent 19%);
+  -webkit-mask-image: linear-gradient(180deg, #000, transparent 85%); mask-image: linear-gradient(180deg, #000, transparent 85%); animation: raios-mar 12s ease-in-out infinite alternate; }
+@keyframes raios-mar { from { transform: skewX(-6deg); } to { transform: skewX(6deg); } }
+.s-ondalume .bolhas { inset: 0; --z: 1; }
+.s-ondalume .bolhas i { position: absolute; bottom: -40px; width: var(--s, 14px); aspect-ratio: 1; border-radius: 50%; border: 1px solid rgba(255,255,255,.55);
+  background: radial-gradient(circle at 35% 30%, rgba(255,255,255,.9), rgba(191,255,248,.25) 45%, transparent 70%); animation: bolha-sobe var(--t, 9s) linear var(--d, 0s) infinite; }
+.s-ondalume .bolhas i:nth-child(1) { left: 52%; --s: 18px; --t: 9s; } .s-ondalume .bolhas i:nth-child(2) { left: 60%; --s: 10px; --t: 7s; --d: -3s; }
+.s-ondalume .bolhas i:nth-child(3) { left: 68%; --s: 24px; --t: 11s; --d: -6s; } .s-ondalume .bolhas i:nth-child(4) { left: 75%; --s: 12px; --t: 8s; --d: -1s; }
+.s-ondalume .bolhas i:nth-child(5) { left: 83%; --s: 16px; --t: 10s; --d: -5s; } .s-ondalume .bolhas i:nth-child(6) { left: 90%; --s: 9px; --t: 6.5s; --d: -2s; }
+.s-ondalume .bolhas i:nth-child(7) { left: 44%; --s: 11px; --t: 9.5s; --d: -7s; } .s-ondalume .bolhas i:nth-child(8) { left: 96%; --s: 20px; --t: 12s; --d: -4s; }
+@keyframes bolha-sobe { from { transform: translate(0, 0); opacity: 0; } 10% { opacity: 1; } 50% { transform: translate(14px, -55vh); } to { transform: translate(-6px, -110vh); opacity: .2; } }
+.s-ondalume .palco { position: absolute; z-index: 3; pointer-events: none; aspect-ratio: 1.15; right: 3vw; bottom: max(7vh, 84px); width: min(52vw, 96vh, 100vw - 480px); }
+.s-ondalume .palco .camada { --z: 0; }
+.s-ondalume .cel { width: 38%; aspect-ratio: 412 / 915; border-radius: 26px; padding: 7px; background: linear-gradient(160deg, #1d5a78, #07263d 60%, #0a3550);
+  box-shadow: 0 0 0 1.5px rgba(159,240,255,.25), 0 30px 60px rgba(0,10,25,.5), 0 0 40px rgba(95,246,228,.2); }
+.s-ondalume .cel img { width: 100%; height: 100%; object-fit: cover; border-radius: 20px; }
+.s-ondalume .cel-1 { right: 8%; top: 0; rotate: 5deg; --anim: da-direita; --d: .1s; }
+.s-ondalume .cel-2 { right: 46%; top: 8%; rotate: -7deg; --anim: de-baixo; --d: .25s; }
+.s-ondalume .lume { left: 0; bottom: 10%; width: 30%; --anim: surgir; --d: .45s; }
+.s-ondalume .lume img { animation: flutuar 3.4s ease-in-out infinite; filter: drop-shadow(0 18px 24px rgba(0,20,40,.5)); }
+.s-ondalume .pecas { right: 4%; bottom: -3%; display: flex; gap: 6px; --anim: surgir; --d: .6s; }
+.s-ondalume .pecas span { display: grid; place-items: center; width: clamp(38px, 4.2vw, 62px); aspect-ratio: 1; border-radius: 30%; color: #0b2d4a;
+  font: 700 clamp(1.3rem, 2.3vw, 2.1rem)/1 "Fredoka", "Outfit", system-ui, sans-serif;
+  background: radial-gradient(120% 95% at 28% 12%, #fff 0%, #e3f8f8 52%, #92dbe3 100%); box-shadow: inset 0 2px 0 #fff, 0 4px 0 #5bb3c6, 0 10px 20px rgba(0,40,70,.45);
+  animation: flutuar 4s ease-in-out infinite; }
+.s-ondalume .pecas span:nth-child(2) { animation-delay: -1s; } .s-ondalume .pecas span:nth-child(3) { animation-delay: -2s; } .s-ondalume .pecas span:nth-child(4) { animation-delay: -3s; }
+@media (max-aspect-ratio: 1/1) {
+  .s-ondalume .palco { aspect-ratio: 1.1; right: auto; bottom: auto; left: 50%; translate: -50% 0; top: max(60px, 7svh); width: max(76vw, min(100vw, (100svh - 470px) * 1.1, 50svh * 1.1)); }
+  .s-ondalume::after { background: linear-gradient(0deg, rgba(3,17,32,.92) 0%, rgba(3,17,32,.72) 36%, transparent 62%); }
+  .s-ondalume .raios { inset: -10% -10% 40% -10%; }
+  .s-ondalume .bolhas i:nth-child(n) { left: calc(var(--s) * 4.2); }
+}
+@media (min-aspect-ratio: 1/1) and (max-height: 540px) {
+  .s-ondalume .palco { width: min(100vw - 46vw - 40px, (100svh - 110px) * 1.15); bottom: 56px; }
+}
+/* Cartão de destaque do Ondalume: dois celulares no mar e o Lume no meio */
+.card-ondalume { position: relative; display: flex; justify-content: center; align-items: flex-end; gap: 4%; padding-top: 6%;
+  background: radial-gradient(70% 60% at 50% 20%, rgba(127,248,255,.3), transparent 70%), linear-gradient(180deg, #1f9fbd, #0b4f7c 60%, #06263f) !important; }
+.card-ondalume img { width: 30% !important; height: auto !important; aspect-ratio: 412 / 915; object-fit: cover; border-radius: 12px; border: 4px solid #0a3550; margin-bottom: -16%; }
+.card-ondalume img:first-child { rotate: -5deg; } .card-ondalume img:last-child { rotate: 5deg; }
+.card-ondalume img:nth-child(2) { position: absolute; left: 50%; bottom: 8%; translate: -50% 0; z-index: 2; width: 34% !important; aspect-ratio: 1; border: 0; border-radius: 0; margin: 0; object-fit: contain; filter: drop-shadow(0 10px 14px rgba(0,20,40,.5)); }
+/* Com cinco jogos, os nomes no seletor de slides só aparecem em telas largas */
+@media (max-width: 1180px) { .slides-pontos button span { display: none; } .slides-pontos button { padding: 6px; } }

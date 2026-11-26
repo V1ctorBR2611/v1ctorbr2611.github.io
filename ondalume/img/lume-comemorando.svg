@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="lume lume-comemorando " viewBox="0 0 120 120" aria-hidden="true" focusable="false"><defs><defs>
+<radialGradient id="lu-corpo" cx=".42" cy=".34" r=".8">
+  <stop offset="0" stop-color="#5fe0d6"></stop><stop offset=".45" stop-color="#1f9fae"></stop><stop offset="1" stop-color="#0b5a78"></stop>
+</radialGradient>
+<linearGradient id="lu-barriga" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#f4fffb"></stop><stop offset="1" stop-color="#b6efe6"></stop>
+</linearGradient>
+<linearGradient id="lu-nad" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#8ff3ea"></stop><stop offset="1" stop-color="#2a9fb4"></stop>
+</linearGradient>
+<radialGradient id="lu-luz" cx=".4" cy=".38" r=".7">
+  <stop offset="0" stop-color="#ffffff"></stop><stop offset=".4" stop-color="#d4fffa"></stop><stop offset="1" stop-color="#4ef0dc"></stop>
+</radialGradient>
+<radialGradient id="lu-halo" cx=".5" cy=".5" r=".5">
+  <stop offset="0" stop-color="#bffff8" stop-opacity=".95"></stop><stop offset=".3" stop-color="#5ff6e4" stop-opacity=".5"></stop><stop offset="1" stop-color="#5ff6e4" stop-opacity="0"></stop>
+</radialGradient>
+<radialGradient id="lu-iris" cx=".45" cy=".4" r=".7">
+  <stop offset="0" stop-color="#2a6a9a"></stop><stop offset=".6" stop-color="#0d2e4e"></stop><stop offset="1" stop-color="#061a30"></stop>
+</radialGradient>
+<linearGradient id="lu-tanque" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="#ffe58a"></stop><stop offset=".5" stop-color="#ffbf3c"></stop><stop offset="1" stop-color="#d97a1a"></stop>
+</linearGradient></defs><defs><radialGradient id="oi-perola" cx=".38" cy=".32" r=".75"><stop offset="0" stop-color="#ffffff" stop-opacity="1"></stop><stop offset="0.32" stop-color="#fff6ee" stop-opacity="1"></stop><stop offset="0.68" stop-color="#f6dbe6" stop-opacity="1"></stop><stop offset="0.9" stop-color="#c9b3e6" stop-opacity="1"></stop><stop offset="1" stop-color="#a996d8" stop-opacity="1"></stop></radialGradient><linearGradient id="oi-coral" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffb1a0" stop-opacity="1"></stop><stop offset="0.45" stop-color="#ff6b7a" stop-opacity="1"></stop><stop offset="1" stop-color="#d42e5e" stop-opacity="1"></stop></linearGradient><linearGradient id="oi-ouro" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff4b8" stop-opacity="1"></stop><stop offset="0.4" stop-color="#ffd060" stop-opacity="1"></stop><stop offset="1" stop-color="#e48a22" stop-opacity="1"></stop></linearGradient><linearGradient id="oi-ouro-h" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe58a" stop-opacity="1"></stop><stop offset="0.5" stop-color="#ffbf3c" stop-opacity="1"></stop><stop offset="1" stop-color="#d97a1a" stop-opacity="1"></stop></linearGradient><linearGradient id="oi-ciano" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d4fffa" stop-opacity="1"></stop><stop offset="0.4" stop-color="#6ff7e7" stop-opacity="1"></stop><stop offset="1" stop-color="#14a0b8" stop-opacity="1"></stop></linearGradient><linearGradient id="oi-azul" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a6e4ff" stop-opacity="1"></stop><stop offset="0.45" stop-color="#45a3ef" stop-opacity="1"></stop><stop offset="1" stop-color="#2152b8" stop-opacity="1"></stop></linearGradient><linearGradient id="oi-aco" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="1"></stop><stop offset="0.45" stop-color="#cfdde9" stop-opacity="1"></stop><stop offset="1" stop-color="#7690a8" stop-opacity="1"></stop></linearGradient><linearGradient id="oi-madeira" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d99a5c" stop-opacity="1"></stop><stop offset="0.5" stop-color="#9a6232" stop-opacity="1"></stop><stop offset="1" stop-color="#61391a" stop-opacity="1"></stop></linearGradient><linearGradient id="oi-concha" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff3e8" stop-opacity="1"></stop><stop offset="0.45" stop-color="#ffc2a6" stop-opacity="1"></stop><stop offset="1" stop-color="#ef7c8a" stop-opacity="1"></stop></linearGradient><linearGradient id="oi-violeta" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#efe6ff" stop-opacity="1"></stop><stop offset="0.45" stop-color="#b49aff" stop-opacity="1"></stop><stop offset="1" stop-color="#6a4bd6" stop-opacity="1"></stop></linearGradient><linearGradient id="oi-vidro" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="1"></stop><stop offset="0.5" stop-color="#e2f8ff" stop-opacity="1"></stop><stop offset="1" stop-color="#9fd6ea" stop-opacity="1"></stop></linearGradient><linearGradient id="oi-verde" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d6ffe2" stop-opacity="1"></stop><stop offset="0.45" stop-color="#78e3a3" stop-opacity="1"></stop><stop offset="1" stop-color="#249a68" stop-opacity="1"></stop></linearGradient><linearGradient id="oi-gelo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f5feff" stop-opacity="1"></stop><stop offset="0.5" stop-color="#c4f0ff" stop-opacity="1"></stop><stop offset="1" stop-color="#76c3ea" stop-opacity="1"></stop></linearGradient><linearGradient id="oi-rocha" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8f9cab" stop-opacity="1"></stop><stop offset="0.5" stop-color="#56616f" stop-opacity="1"></stop><stop offset="1" stop-color="#2c333e" stop-opacity="1"></stop></linearGradient><linearGradient id="oi-vazio" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#21557a" stop-opacity="0.75"></stop><stop offset="1" stop-color="#0a2a45" stop-opacity="0.85"></stop></linearGradient><linearGradient id="oi-brilho-v" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.85"></stop><stop offset="1" stop-color="#ffffff" stop-opacity="0"></stop></linearGradient><radialGradient id="oi-halo" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#bffffa" stop-opacity="0.95"></stop><stop offset="0.35" stop-color="#5ff6e4" stop-opacity="0.55"></stop><stop offset="1" stop-color="#5ff6e4" stop-opacity="0"></stop></radialGradient><radialGradient id="oi-halo-ouro" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fff6c8" stop-opacity="0.95"></stop><stop offset="0.4" stop-color="#ffcb5c" stop-opacity="0.5"></stop><stop offset="1" stop-color="#ffcb5c" stop-opacity="0"></stop></radialGradient><radialGradient id="oi-luz" cx=".42" cy=".38" r=".7"><stop offset="0" stop-color="#ffffff" stop-opacity="1"></stop><stop offset="0.45" stop-color="#d8fffb" stop-opacity="1"></stop><stop offset="1" stop-color="#5ff6e4" stop-opacity="1"></stop></radialGradient></defs></defs>
+<g class="lu-corpo-todo">
+  <circle class="lu-halo" cx="93" cy="16" r="20" fill="url(#lu-halo)"/>
+  <path class="lu-antena" d="M66 37C63 22 74 12 88 15" fill="none" stroke="#0d5d78" stroke-width="3.4" stroke-linecap="round"/>
+  <path d="M66 37C63 22 74 12 88 15" fill="none" stroke="#3cc4c8" stroke-width="1.4" stroke-linecap="round" opacity=".8"/>
+  <g class="lu-cauda">
+    <path d="M27 66C17 54 9 50 5 52c3 6 3 22 0 28 4 2 12-2 22-14z" fill="url(#lu-nad)" stroke="#0b5a78" stroke-width="1.8" stroke-linejoin="round"/>
+    <path d="M8 58q6 4 13 8M8 74q6-4 13-8" fill="none" stroke="#e6fffb" stroke-width="1.4" stroke-linecap="round" opacity=".6"/>
+  </g>
+  <path class="lu-dorsal" d="M44 38c2-8 10-12 18-10-2 3-3 6-3 9z" fill="url(#lu-nad)" stroke="#0b5a78" stroke-width="1.6" stroke-linejoin="round"/>
+  <ellipse cx="59" cy="66.5" rx="37" ry="32.5" fill="#062f45" opacity=".35" transform="translate(0 3)"/>
+  <ellipse cx="59" cy="66" rx="37" ry="32.5" fill="url(#lu-corpo)" stroke="#0a4d68" stroke-width="2"/>
+  <path d="M30 78c8 14 24 20 38 20 14 0 23-6 27-14-8 4-20 6-34 4-12-1.6-23-5-31-10z" fill="url(#lu-barriga)" opacity=".95"/>
+  <g class="lu-pontos" fill="#bffff8">
+    <circle cx="40" cy="84" r="1.8"/><circle cx="48" cy="88.6" r="1.8"/><circle cx="57" cy="91.4" r="1.8"/><circle cx="66" cy="92.4" r="1.8"/><circle cx="75" cy="91.6" r="1.8"/><circle cx="83.5" cy="88.6" r="1.8"/>
+  </g>
+  <path d="M33 50c5-11 15-17 27-17.5" fill="none" stroke="#c8fffa" stroke-width="4.5" stroke-linecap="round" opacity=".55"/>
+  <circle cx="35.5" cy="58" r="2.4" fill="#c8fffa" opacity=".6"/>
+  <ellipse cx="50" cy="74.5" rx="5.4" ry="3.2" fill="#ff8fb0" opacity=".55"/>
+  <ellipse cx="88.5" cy="73.5" rx="4.4" ry="2.8" fill="#ff8fb0" opacity=".55"/>
+  <g class="lu-olhos"><path d="M49 62q8 -11.5 16 0" fill="none" stroke="#0b2d4a" stroke-width="3.4" stroke-linecap="round"/><path d="M73.8 62q7.2 -10.35 14.4 0" fill="none" stroke="#0b2d4a" stroke-width="3.4" stroke-linecap="round"/></g>
+  
+  <path d="M61 73.5h17q-1 10-8.5 10T61 73.5z" fill="#0b2d4a" stroke="#0b2d4a" stroke-width="2" stroke-linejoin="round"/><path d="M64.5 80q5 3.6 10 0" fill="#ff8aa0"/>
+  
+  <g class="lu-nadadeira"><path d="M47 80c-8 1-13 6-13 11 6 1 12-2 15-8z" fill="url(#lu-nad)" stroke="#0b5a78" stroke-width="1.6" stroke-linejoin="round"/></g>
+  <circle class="lu-luz" cx="91" cy="16" r="7.4" fill="url(#lu-luz)" stroke="#2fd8c8" stroke-width="1.2"/>
+  <circle cx="88.6" cy="13.6" r="2.4" fill="#fff"/>
+</g>
+<g class="lu-faiscas">
+        <path class="lu-f1" d="M14 30l2 5 5 2-5 2-2 5-2-5-5-2 5-2z" fill="#ffe27a"/>
+        <path class="lu-f2" d="M104 46l1.6 4 4 1.6-4 1.6-1.6 4-1.6-4-4-1.6 4-1.6z" fill="#bffff8"/>
+        <path class="lu-f3" d="M20 92l1.4 3.4 3.4 1.4-3.4 1.4-1.4 3.4-1.4-3.4-3.4-1.4 3.4-1.4z" fill="#ffb3c8"/>
+      </g>
+</svg>
