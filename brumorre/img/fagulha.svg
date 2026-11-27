@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="fagulha" viewBox="0 0 80 96" aria-hidden="true">
+  <g class="fg-corpo">
+    <ellipse cx="40" cy="90" rx="16" ry="4" fill="#2a1145" opacity="0.25"/>
+    <g class="fg-braco fg-b1"><path d="M17 58 q-9 -2 -11 -10" fill="none" stroke="#fff1d0" stroke-width="5" stroke-linecap="round" opacity="0.85"/></g>
+    <g class="fg-braco fg-b2"><path d="M63 58 q9 -2 11 -10" fill="none" stroke="#fff1d0" stroke-width="5" stroke-linecap="round" opacity="0.85"/></g>
+    <path d="M40 6 C52 22 66 36 66 56 a26 26 0 0 1 -52 0 C14 44 22 34 28 26 C29 34 32 38 36 40 C34 28 35 17 40 6z" fill="#ffb030" stroke="#2a1145" stroke-width="3.5" stroke-linejoin="round"/>
+    <path d="M40 26 C47 36 56 44 56 57 a16 16 0 0 1 -32 0 C24 47 32 38 40 26z" fill="#ffd66a"/>
+    <path d="M26 46 q2 -8 8 -12" fill="none" stroke="#fff6d0" stroke-width="4" stroke-linecap="round"/>
+    <g class="fg-olhos">
+      <ellipse cx="32" cy="58" rx="5.2" ry="6.4" fill="#2a1145"/><ellipse cx="48" cy="58" rx="5.2" ry="6.4" fill="#2a1145"/>
+      <circle cx="33.6" cy="55.6" r="2" fill="#fff"/><circle cx="49.6" cy="55.6" r="2" fill="#fff"/>
+    </g>
+    <circle cx="25" cy="66" r="3.4" fill="#ff7a5a" opacity="0.55"/><circle cx="55" cy="66" r="3.4" fill="#ff7a5a" opacity="0.55"/>
+    <path d="M36 68 q4 4 8 0" fill="none" stroke="#2a1145" stroke-width="2.6" stroke-linecap="round"/>
+  </g>
+</svg>

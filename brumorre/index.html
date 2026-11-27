@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>BRUMORRE</title>
+  <meta name="description" content="Brumorre: Torres da Névoa. Tower defense em 3D para jogar em pé: erga torres mágicas e defenda as ilhas flutuantes da névoa viva. Em breve para Android.">
+  <meta name="theme-color" content="#2b2a5c">
+  <meta property="og:title" content="BRUMORRE: Torres da Névoa">
+  <meta property="og:description" content="Defenda as ilhas flutuantes da névoa viva com torres mágicas em 3D. Em breve para Android.">
+  <meta property="og:image" content="destaque.webp">
+  <link rel="icon" href="icone.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito+Sans:wght@400;600;700;800&family=Outfit:wght@400;500;700;800&display=swap">
+  <link rel="stylesheet" href="../estilo.css">
+  <link rel="stylesheet" href="pagina.css">
+</head>
+<body class="pagina-brumorre">
+
+<header class="topo">
+  <a class="marca" href="../"><span class="ponto" aria-hidden="true"></span>Jogos e Apps</a>
+  <nav aria-label="Aplicativos">
+    <a href="../turbo-bolidos/">TURBO BÓLIDOS GP</a>
+    <a href="../uzu-strike/">UZU STRIKE</a>
+    <a href="../kibo/">KIBO PLAYER</a>
+    <a href="../letranca/">LETRANÇA</a>
+    <a href="../ondalume/">ONDALUME</a>
+    <a href="./" aria-current="page">BRUMORRE</a>
+  </nav>
+</header>
+
+<main>
+  <!-- ================= Herói: o diorama ao pôr do sol ================= -->
+  <section class="br-heroi" id="inicio" aria-label="Brumorre: Torres da Névoa">
+    <div class="br-ceu" aria-hidden="true">
+      <i class="br-sol"></i>
+      <div class="br-polen"></div>
+    </div>
+    <div class="br-heroi-dentro">
+      <div class="br-heroi-texto">
+        <span class="br-selo">Em breve · Android</span>
+        <h1 class="br-logo"><img src="img/logo.webp" alt="Brumorre: Torres da Névoa" width="900" height="396"></h1>
+        <p class="br-desc">A Bruma despertou. Uma névoa viva e roxa sobe do mar de nuvens e avança sobre as ilhas flutuantes do céu. Erga torres mágicas, lance poderes e não deixe a escuridão apagar o Farol.</p>
+        <div class="br-botoes">
+          <a class="br-botao" href="https://play.google.com/store/apps/details?id=br.com.brumorre">
+            <svg class="icone-play" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00d7fe" d="M3.6 1.8 13.5 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1z"/><path fill="#00f076" d="M3.6 1.8c.3-.2.7-.2 1.1 0L17 8.5 13.5 12z"/><path fill="#ff3a44" d="M17 15.5 4.7 22.6c-.4.2-.8.2-1.1 0L13.5 12z"/><path fill="#ffce00" d="M17 8.5l3.3 1.9c1 .6 1 2.6 0 3.2L17 15.5 13.5 12z"/></svg>
+            <span><small>Em breve no</small>Google Play</span>
+          </a>
+          <a class="br-botao lilas" href="#torres"><span>Conhecer as torres</span></a>
+        </div>
+      </div>
+      <div class="br-heroi-arte" aria-hidden="true">
+        <div class="br-celular br-c1"><img src="img/tela-01.webp" alt=""></div>
+        <img class="br-flut f1" src="img/torre-prisma-2.webp" alt="">
+        <img class="br-flut f2" src="img/torre-balestra-2.webp" alt="">
+        <img class="br-flut f3" src="img/inimigo-brumito.webp" alt="">
+        <img class="br-flut f4" src="img/inimigo-mariposa.webp" alt="">
+        <img class="br-flut f5" src="img/fagulha.svg" alt="">
+      </div>
+    </div>
+    <div class="br-nuvens" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="br-bruma" aria-hidden="true"></div>
+  </section>
+
+  <!-- ================= Como joga ================= -->
+  <section class="br-secao br-como" id="como">
+    <div class="envolve">
+      <div class="br-cabeca centro surge">
+        <span class="br-tipo">Tower defense em 3D, em pé</span>
+        <h2>Um diorama mágico <em>na palma da mão</em></h2>
+        <p>Cada fase é uma ilha viva: moinhos girando, cachoeiras caindo no vazio, lanternas acesas e a Bruma rolando pelo caminho antes de cada onda.</p>
+      </div>
+      <ol class="br-passos">
+        <li class="surge"><b>1</b><strong>Construa</strong><span>Toque num pedestal brilhante e escolha a torre. O lume das criaturas paga as próximas.</span></li>
+        <li class="surge"><b>2</b><strong>Chame a onda</strong><span>A Bruma mostra o caminho antes de chegar. Chame cedo e ganhe lume extra.</span></li>
+        <li class="surge"><b>3</b><strong>Proteja o Farol</strong><span>Cada criatura que passa apaga um pouco da luz. Vença e a ilha acende!</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= Torres ================= -->
+  <section class="br-secao br-torres" id="torres">
+    <div class="envolve">
+      <div class="br-cabeca centro surge">
+        <span class="br-tipo">Torres que evoluem</span>
+        <h2>Três níveis e uma <em>especialização</em></h2>
+        <p>No topo, cada torre escolhe um caminho que muda a forma e o jeito de lutar. Escolha uma torre e veja ela crescer:</p>
+      </div>
+      <div class="br-oficina surge">
+        <div class="br-oficina-lista" role="tablist" aria-label="Torres"></div>
+        <div class="br-oficina-palco">
+          <div class="br-pedestal" aria-hidden="true"></div>
+          <img class="br-oficina-img" src="img/torre-balestra-0.webp" alt="">
+          <div class="br-oficina-info">
+            <h3 class="br-oficina-nome">Balestra</h3>
+            <span class="br-oficina-nivel">Nível 1</span>
+            <p class="br-oficina-desc"></p>
+            <div class="br-oficina-tags"></div>
+          </div>
+          <div class="br-niveis" role="group" aria-label="Nível da torre"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Criaturas ================= -->
+  <section class="br-secao br-criaturas" id="criaturas">
+    <div class="br-nevoa" aria-hidden="true"></div>
+    <div class="envolve">
+      <div class="br-cabeca centro surge">
+        <span class="br-tipo">Criaturas da Bruma</span>
+        <h2>Cada uma com <em>seu truque</em></h2>
+        <p>Rápidas, blindadas, voadoras, curandeiras, furtivas, que se dividem e que saltam. Nada de violência: elas se desfazem em névoa e faíscas.</p>
+      </div>
+      <div class="br-bestiario"></div>
+    </div>
+  </section>
+
+  <!-- ================= Chefes ================= -->
+  <section class="br-secao br-chefes" id="chefes">
+    <div class="envolve">
+      <div class="br-cabeca centro surge">
+        <span class="br-tipo">Chefes gigantes</span>
+        <h2>Um em cada região, <em>com mecânica própria</em></h2>
+      </div>
+      <div class="br-chefe surge">
+        <div class="br-chefe-arte"><img class="br-chefe-img" src="img/inimigo-graoBrumo.webp" alt=""></div>
+        <div class="br-chefe-txt">
+          <span class="br-chefe-regiao"></span>
+          <h3 class="br-chefe-nome">GRÃO-BRUMO</h3>
+          <p class="br-chefe-desc"></p>
+        </div>
+        <div class="br-chefe-lista" role="tablist" aria-label="Chefes"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Regiões ================= -->
+  <section class="br-secao br-regioes" id="regioes">
+    <div class="envolve">
+      <div class="br-cabeca centro surge">
+        <span class="br-tipo">Regiões mágicas</span>
+        <h2>Ilhas flutuantes <em>para conquistar</em></h2>
+        <p class="br-regioes-resumo"></p>
+      </div>
+      <div class="br-arquipelago"></div>
+    </div>
+  </section>
+
+  <!-- ================= Poderes ================= -->
+  <section class="br-secao br-poderes" id="poderes">
+    <div class="envolve br-dois">
+      <div class="br-celular br-poderes-cel surge" aria-hidden="true"><img src="img/tela-08.webp" alt="" loading="lazy"></div>
+      <div>
+        <div class="br-cabeca surge">
+          <span class="br-tipo">Poderes do Guardião</span>
+          <h2>Luz, raízes <em>e vento</em></h2>
+          <p>Quando a onda aperta, o Guardião do Farol entra em ação. Os poderes recarregam com o tempo e ficam mais fortes na árvore de melhorias.</p>
+        </div>
+        <ul class="br-poderes-lista surge">
+          <li style="--c:#ff7a2f"><span class="br-poder-ic"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="9" fill="#fff3c4"/><g stroke="#ffb547" stroke-width="3.5" stroke-linecap="round"><path d="M24 5v6M24 37v6M5 24h6M37 24h6M10.5 10.5l4 4M33.5 33.5l4 4M37.5 10.5l-4 4M14.5 33.5l-4 4"/></g></svg></span><div><strong>Lança Solar</strong><span>Um raio de sol cai do céu e queima a Bruma numa área.</span></div></li>
+          <li style="--c:#7ed36b"><span class="br-poder-ic"><svg viewBox="0 0 48 48"><g fill="none" stroke="#b4f08a" stroke-width="3.5" stroke-linecap="round"><path d="M24 42V20M24 28c-6-2-10-7-11-14M24 24c6-2 10-7 11-14M24 34c-5 0-9 3-12 7M24 34c5 0 9 3 12 7"/></g><circle cx="13" cy="13" r="3" fill="#fff1b8"/><circle cx="35" cy="10" r="3" fill="#fff1b8"/></svg></span><div><strong>Raízes de Luz</strong><span>Raízes brilhantes seguram as criaturas no caminho.</span></div></li>
+          <li style="--c:#8fd8ff"><span class="br-poder-ic"><svg viewBox="0 0 48 48"><g fill="none" stroke="#dff6ff" stroke-width="3.5" stroke-linecap="round"><path d="M6 18h24a6 6 0 1 0-6-6"/><path d="M6 27h32a6 6 0 1 1-6 6"/><path d="M6 36h14"/></g></svg></span><div><strong>Sopro do Farol</strong><span>Um vendaval empurra a Bruma para trás e derruba os voadores.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Mais ================= -->
+  <section class="br-secao br-mais" id="mais">
+    <div class="envolve">
+      <div class="br-cabeca centro surge">
+        <span class="br-tipo">Para jogar mais</span>
+        <h2>Sempre tem <em>mais um desafio</em></h2>
+      </div>
+      <div class="br-mais-grade">
+        <article class="br-cartao surge"><span class="br-cartao-ic">⚔</span><h3>Desafios Heroicos</h3><p>Fez 3 estrelas? A mesma ilha volta com uma regra extra: sem Bombarda, uma vida só, sem poderes…</p></article>
+        <article class="br-cartao surge"><span class="br-cartao-ic">∞</span><h3>Abismo Infinito</h3><p>Ondas sem fim, um chefe a cada 10 ondas e recordes para bater em cada ilha.</p></article>
+        <article class="br-cartao surge"><span class="br-cartao-ic">★</span><h3>Árvore de melhorias</h3><p>Gaste as estrelas conquistadas em melhorias permanentes. Redistribua quando quiser.</p></article>
+        <article class="br-cartao surge"><span class="br-cartao-ic">❖</span><h3>Baú e missões do dia</h3><p>Um baú diário e missões para ganhar gemas jogando.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Galeria ================= -->
+  <section class="br-secao br-galeria" id="telas">
+    <div class="envolve">
+      <div class="br-cabeca centro surge">
+        <span class="br-tipo">Telas</span>
+        <h2>Cada região, <em>um clima</em></h2>
+        <p>Pôr do sol dourado, crepúsculo de outono, aurora na neve, poeira de cobre e noite de lua cheia.</p>
+      </div>
+    </div>
+    <div class="br-faixa surge">
+      <figure><img src="img/tela-01.webp" alt="Partida numa ilha de outono" loading="lazy"></figure>
+      <figure><img src="img/tela-02.webp" alt="Chefe na neve" loading="lazy"></figure>
+      <figure><img src="img/tela-04.webp" alt="Partida no Desfiladeiro de Cobre" loading="lazy"></figure>
+      <figure><img src="img/tela-03.webp" alt="Mapa da Cidadela da Bruma" loading="lazy"></figure>
+      <figure><img src="img/tela-05.webp" alt="Partida nos Picos de Geada" loading="lazy"></figure>
+      <figure><img src="img/tela-08.webp" alt="Poderes na Cidadela da Bruma" loading="lazy"></figure>
+      <figure><img src="img/tela-07.webp" alt="Enciclopédia das criaturas" loading="lazy"></figure>
+      <figure><img src="img/tela-06.webp" alt="Vitória com três estrelas" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <!-- ================= Final ================= -->
+  <section class="br-final">
+    <div class="br-farol" aria-hidden="true"><i class="br-farol-feixe"></i></div>
+    <div class="envolve br-final-dentro surge">
+      <img class="br-final-fagulha" src="img/fagulha.svg" alt="" aria-hidden="true">
+      <h2>Erga as torres e <em>acenda o Farol</em></h2>
+      <p>Em breve no seu celular. Joga offline e o progresso fica no seu aparelho.</p>
+      <div class="br-botoes centro">
+        <a class="br-botao" href="https://play.google.com/store/apps/details?id=br.com.brumorre">
+          <svg class="icone-play" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00d7fe" d="M3.6 1.8 13.5 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1z"/><path fill="#00f076" d="M3.6 1.8c.3-.2.7-.2 1.1 0L17 8.5 13.5 12z"/><path fill="#ff3a44" d="M17 15.5 4.7 22.6c-.4.2-.8.2-1.1 0L13.5 12z"/><path fill="#ffce00" d="M17 8.5l3.3 1.9c1 .6 1 2.6 0 3.2L17 15.5 13.5 12z"/></svg>
+          <span><small>Em breve no</small>Google Play</span>
+        </a>
+        <a class="br-botao lilas" href="privacidade.html"><span>Política de privacidade</span></a>
+      </div>
+      <ul class="br-privacidade">
+        <li>Sem contas, cadastro ou login.</li>
+        <li>Sem anúncios durante a partida; vídeos premiados sempre opcionais.</li>
+        <li>Sem compras no app: as gemas se ganham jogando.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="secao br-outros">
+    <div class="envolve">
+      <div class="secao-titulo"><span class="tipo">Conheça também</span></div>
+      <div class="outros">
+        <a class="outro" href="../turbo-bolidos/"><img src="../turbo-bolidos/icone.png" alt=""><div><strong>TURBO BÓLIDOS GP</strong><span>Corrida arcade 100% offline</span></div></a>
+        <a class="outro" href="../uzu-strike/"><img src="../uzu-strike/icone.png" alt=""><div><strong>UZU STRIKE</strong><span>Batalhas de piões com Kamis</span></div></a>
+        <a class="outro" href="../kibo/"><img src="../kibo/icone.png" alt=""><div><strong>KIBO PLAYER</strong><span>Player com um robozinho de estimação</span></div></a>
+        <a class="outro" href="../letranca/"><img src="../letranca/icone.png" alt=""><div><strong>LETRANÇA</strong><span>Palavras cruzadas costuradas · em breve</span></div></a>
+        <a class="outro" href="../ondalume/"><img src="../ondalume/icone.png" alt=""><div><strong>ONDALUME</strong><span>Palavras no fundo do mar · em breve</span></div></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="envolve">
+    <span>© 2026 Victor da Silva Rodrigues</span>
+    <nav><a href="../">Todos os apps</a><a href="privacidade.html">Política de privacidade</a></nav>
+  </div>
+</footer>
+
+<script src="dados.js"></script>
+<script src="pagina.js"></script>
+<script src="../site.js"></script>
+</body>
+</html>
